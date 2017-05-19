@@ -3,7 +3,6 @@
 var app = getApp()
 Page({
   data: {
-    // motto: '登录',
     userInfo: {}
   },
   //事件处理函数
@@ -12,11 +11,11 @@ Page({
       url: '../user/user'
     })
   },
-  // toLoginView: function () {
-  //   wx.navigateTo({
-  //     url: '../login/login'
-  //   })
-  // },
+  toSearchView: function () {
+    wx.navigateTo({
+      url: '../search/search'
+    })
+  },
   onLoad: function () {
     console.log('onLoad')
     var that = this
