@@ -28,13 +28,13 @@
         "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "images/home.png",
-        "selectedIconPath": "images/home.png"
+        "selectedIconPath": "images/home-selected.png"
       },
       {
         "pagePath": "pages/logs/logs",
         "text": "资讯",
         "iconPath": "images/news.png",
-        "selectedIconPath": "images/news.png"
+        "selectedIconPath": "images/news-selected.png"
       }
     ],
     "position": "bottom"
