@@ -1,18 +1,36 @@
 // pages/user/user.js
+var app = getApp()
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-  
+    open: false
+  },
+  tap_avatar: function (e) {
+    if (this.data.open) {
+      this.setData({
+        open: false
+      });
+    } else {
+      this.setData({
+        open: true
+      });
+    }
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var vm = this;
+    //调用应用实例的方法获取全局数据
+    app.getUserInfo(function (userInfo) {
+      vm.setData({
+        userInfo: userInfo
+      })
+    });
+
+    vm.setData({
+      windowHeight: wx.getSystemInfoSync().windowHeight// 屏幕高度
+    }); 
   },
 
   /**

@@ -89,7 +89,7 @@ Page({
     var username = param.username.trim();
     var password = param.password.trim();
     var that = this;
-    if((username=='admin@163.com'||username=='18500334462')&&password=='000000'){
+    if((username=='admin@163.com'||username=='18500334462')&&password=='0'){
         setTimeout(function(){
           wx.showToast({
             title: '成功',
@@ -111,6 +111,7 @@ Page({
   redirectTo:function(param){
     //需要将param转换为字符串
     param = JSON.stringify(param);
+    console.log('param is: ' + param);
     wx.redirectTo({
       url: '../main/main?param='+ param//参数只能是字符串形式，不能为json对象
     })
