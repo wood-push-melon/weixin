@@ -1,22 +1,17 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/logs/logs",
-
     "pages/login/login",
     "pages/login_regist/login_regist",
     "pages/login_findpw/login_findpw",
-    
-    "pages/main/main",
-    
-    "pages/user/user",
     "pages/search/search"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "lightgrey",
     "navigationBarTitleText": "Ai石景山投资小助手",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "black",

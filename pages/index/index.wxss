@@ -21,6 +21,14 @@
   flex-direction: row;
   justify-content: center;
 }
+.logoSecBottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  position: absolute;
+  top: 80%;
+  left: 5%
+}
 .logoImg{
   height: 200rpx;
   width:200rpx; 
@@ -90,6 +98,10 @@
   height: 60rpx;
   width: 60rpx;
 }
+.bulletIcon{
+  height: 40rpx;
+  width: 40rpx;
+}
 .planArea{
   height: 180rpx;
   border-bottom-style: solid;
@@ -126,4 +138,62 @@
 .consultTtl{
   margin-top: 20rpx;
   margin-left: 20rpx;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userinfo-avatar {
+  width: 80rpx;
+  height: 80rpx;
+  margin-bottom: -35rpx;
+  border-radius: 50%;
+}
+.userinfo-avatar-bottom {
+  width: 200rpx;
+  height: 200rpx;
+  margin-bottom: -35rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  color: #aaa;
+}
+.user-motto {
+  margin-top: 100px;
+}
+
+.page-bottom{
+  height: 100%;
+  width: 750rpx;
+  position: fixed; 
+  background: rgba(0, 68, 97, 1);
+  opacity: 1;
+  z-index: 0;
+}
+.wc{
+  display: flex;
+  flex-direction: row;
+  color: white;
+  height: 80rpx;
+  padding: 30rpx 0 30rpx 40rpx;
+}
+
+.page-content{
+  padding-top: 100rpx;
+}
+
+.page-top{
+  height: auto;
+  width: 750rpx;
+  background: #FFFFFF;
+  z-index: 1;
+  transition: All 0.4s ease; 
+  -webkit-transition: All 0.4s ease;
+}
+
+.c-state1{
+  transform: rotate(0deg) scale(1) translate(75%,0%); 
+  -webkit-transform: rotate(0deg) scale(1) translate(75%,0%); 
 }

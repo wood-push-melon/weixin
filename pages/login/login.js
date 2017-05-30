@@ -1,5 +1,5 @@
 var util = require("../../utils/util.js");
-
+var app = getApp();
 Page({
   data:{
     loginBtnTxt:"登录",
@@ -97,6 +97,8 @@ Page({
             duration: 1500
           });
           that.setLoginData2();
+          app.globalData.isLogin = true;
+          // 返回index页面
           that.redirectTo(param);
         },2000);
     }else{
@@ -111,10 +113,7 @@ Page({
   redirectTo:function(param){
     //需要将param转换为字符串
     param = JSON.stringify(param);
-    console.log('param is: ' + param);
-    wx.redirectTo({
-      url: '../main/main?param='+ param//参数只能是字符串形式，不能为json对象
+    wx.navigateBack({
     })
-  }
-
+  },
 })
