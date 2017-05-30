@@ -52,7 +52,7 @@
   margin-right: 25rpx;
 }
 .feedArea{
-  height: 100rpx;
+  height: 70rpx;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -60,6 +60,11 @@
   border-bottom-style: solid;
   border-width: thin;
   border-color: grey;
+}
+.marquee_text {
+  white-space: nowrap;
+  position: relative;
+  top: 0;
 }
 .overviewArea{
   height: 180rpx;
