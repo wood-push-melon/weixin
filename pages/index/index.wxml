@@ -1,53 +1,104 @@
 <!--index.wxml-->
-
-  <!--<view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-  </view>-->
-
-<view class="headerArea">
+<!--用户信息抽屉页-->
+<!--<view class="page-bottom">
   <view class="loginSec">
-    <navigator navigate url="../login/login">登录</navigator>
+    <image class="userinfo-avatar-bottom" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
   </view>
-  
-  <view class="logoSec">
+  <view class="page-content">
+    <view class="wc">
+      <image class="bulletIcon" src="/images/star.png"></image>
+      <text style="padding-left: 20rpx">我的收藏</text>
+    </view>
+    <view class="wc">
+      <text>推荐给朋友</text>
+    </view>
+    <view class="wc">
+      <text>关于我们</text>
+    </view>
+  </view>
+  <view class="logoSecBottom">
     <image class="logoImg" mode="aspectFit" src="/images/logo.jpg"></image>
   </view>
-  <text class="logoTxt">移动投资服务平台</text>
+</view>-->
+
+<!--主页面-->
+<!--<view class="page-top {{open ? 'c-state1' : ''}}" style="{{open? 'position: fixed' : 'position: absolute'}}">-->
   
-  <view class="searchSec">
-    <icon class="searchIcn" type="search" size="14"></icon>
-    <input class="input" placeholder="请输入关键字" bindtap="toSearchView"/>
+  <!--顶部区域-->
+  <view class="headerArea">
+    <!--<view class="loginSec">
+      <navigator navigate url="../login/login" style="{{isLogin? 'display: none;' : ''}}">登录</navigator>
+      <image bindtap="tapAvatar" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover" style="{{isLogin? '' : 'display: none'}}"></image>
+    </view>-->
+    <view class="logoSec">
+      <image class="logoImg" mode="aspectFit" src="/images/logo.jpg"></image>
+      <text class="logoTxt">移动投资服务平台</text>
+    </view>
+    <view class="searchSec">
+      <icon class="searchIcn" type="search" size="14"></icon>
+      <input class="input" placeholder="请输入搜索信息" bindtap="toSearchView" />
+    </view>
   </view>
-</view>
 
-<view class="feedArea">滚动新闻</view>
-
-<view class="overviewArea">
-  <view class="overviewTop">
-    <image class="overviewImg" src="/images/star.png"></image>
-    <image class="overviewImg" src="/images/star.png"></image>
-    <image class="overviewImg" src="/images/star.png"></image>
+  <!--滚动新闻区域-->
+  <view class="feedArea">
+    <view class="marqueeTxt" style="{{open? 'display: none' : ''}} {{orientation}}:{{marqueeDistance}}px;font-size: {{size}}px;" wx:for="{{text}}">
+      <text style="margin-left: {{gap}}px">{{item}}</text>
+      <!--<text wx:if="{{marquee2copy_status}}" style="margin-left:{{marquee2_margin}}px;">{{item}}</text>-->
+    </view>
   </view>
-  <view class="overviewBtm">
-    <text>区情概况</text>
-    <text>重点企业</text>
-    <text>投资政策</text>
+  
+  <!--概况信息区域-->
+  <view class="overviewArea">
+    <view class="overviewTop">
+      <image class="overviewImg" src="/images/star.png"></image>
+      <image class="overviewImg" src="/images/star.png"></image>
+      <image class="overviewImg" src="/images/star.png"></image>
+    </view>
+    <view class="overviewBtm">
+      <text>区情概况</text>
+      <text>重点企业</text>
+      <text>投资政策</text>
+    </view>
   </view>
-</view>
 
-<view class="planArea">
-  <view class="planTtl">产业规划</view>
-</view>
+  <!--发展规划区域-->
+  <view class="planArea">
+    <view class="planTtl">发展规划</view>
+    <view class="planTxt">
+      <text>“一轴、两带、三园、多支点”空间布局</text>
+      <text>查看详情>></text>
+    </view>
+    <view class="mapSec">
+      <image class="mapImgSml" src="/images/logo.jpg"></image>
+    </view>
+  </view>
 
-<view class="keyArea">
-  <view class="keyTtl">重点项目</view>
-</view>
+  <!--投资专题区域-->
+  <view class="specialArea">
+    <view class="specialTtl">投资专题</view>
+    <view class="specProjSec">
+      <image class="specProjImg" src="/images/logo.jpg"></image>
+      <image class="specProjImg" src="/images/logo.jpg"></image>
+      <image class="specProjImg" src="/images/logo.jpg"></image>
+      <image class="specProjImg" src="/images/logo.jpg"></image>
+    </view>
+  </view>
 
-<view class="specialArea">
-  <view class="specialTtl">投资专题</view>
-</view>
+  <!--重点项目区域-->
+  <view class="keyArea">
+    <view class="keyTtl">
+      <text>重点项目</text> 
+      <text>查看详情>></text>
+    </view>
+    <view class="keyProjSec">
+      <image class="keyProjImg" src="/images/logo.jpg"></image>
+      <image class="keyProjImg" src="/images/logo.jpg"></image>
+    </view>
+  </view>
 
-<view class="consultArea">
-  <view class="consultTtl">投资咨询</view>
-</view>
+  <!--投资咨询区域-->
+  <view class="consultArea">
+    <view class="consultTtl">投资咨询</view>
+  </view>
+<!--</view>-->

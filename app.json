@@ -1,22 +1,16 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/logs/logs",
-
-    "pages/login/login",
-    "pages/login_regist/login_regist",
-    "pages/login_findpw/login_findpw",
-    
-    "pages/main/main",
-    
-    "pages/user/user",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/info/info",
+    "pages/user/user"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "lightgrey",
     "navigationBarTitleText": "Ai石景山投资小助手",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "black",
@@ -26,13 +20,19 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页",
+        "text": "投资导向",
         "iconPath": "images/home.png",
         "selectedIconPath": "images/home-selected.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "资讯",
+        "pagePath": "pages/info/info",
+        "text": "区域资讯",
+        "iconPath": "images/news.png",
+        "selectedIconPath": "images/news-selected.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我",
         "iconPath": "images/news.png",
         "selectedIconPath": "images/news-selected.png"
       }
