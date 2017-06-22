@@ -1,0 +1,25 @@
+/* pages/consult/consult.wxss */
+.consult-block{
+  height: 270rpx;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 20rpx;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.consult-title{
+  color: black;
+  font-weight: bold;
+  margin-top: 30rpx;
+}
+.consult-text-preview{
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:4;
+  padding-top: 20rpx;
+}

@@ -1,258 +1,185 @@
 /**index.wxss**/
-/*用户图标样式*/
-/*.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.userinfo-avatar {
-  width: 80rpx;
-  height: 80rpx;
-  margin-bottom: -35rpx;
-  border-radius: 50%;
-}
-.userinfo-avatar-bottom {
-  width: 200rpx;
-  height: 200rpx;
-  margin-bottom: -35rpx;
-  border-radius: 50%;
-}
-.userinfo-nickname {
-  color: #aaa;
-}
-.user-motto {
-  margin-top: 100px;
-}*/
-
-/*顶部区域样式（包括登录、搜索、logo样式）*/
-.headerArea{
+/*主页顶部区域样式（包括logo、搜索样式）*/
+.banner-area{
   width: 100%;
-  height: 450rpx;
-  background: #A9CCE3;
-  display: flex;
-  flex-direction: column;
+  height: 600rpx;
+  background-image: url("https://image.ibb.co/gokkhk/home_banner.png");
+  background-size: 100%;
 }
-/*.loginSec{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-top: 20rpx;
-  margin-left: 20rpx;
-}*/
-.logoSec{
+.logo-section{
+  height: 435rpx;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50rpx;
-  margin-bottom: 30rpx;
+  padding-top: 50rpx;
 }
-/*.logoSecBottom{
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  position: absolute;
-  top: 80%;
-  left: 5%
-}*/
-.logoImg{
-  height: 200rpx;
-  width:200rpx; 
-}
-.logoTxt{
+.logo-text{
   color: white;
-  font-size: large;
-  font-weight: bold;
-  font-family: 微软雅黑;
+  font-size: 45rpx;
+  padding-top: 40rpx;
 }
-.searchSec{
+.search-section{
   width: 90%;
-  height: 70rpx;
+  height: 80rpx;
   background: white;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-left: 5%;
-  border-radius: 35rpx;
+  border-radius: 40rpx;
 }
-.searchIcn{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-left: 95rpx;
-  margin-right: 20rpx;
+.search-text{
+  color: #78D1E9;
+  font-family: "微软雅黑";
 }
 
 /*滚动新闻区域样式*/
-.feedArea{
+.feed-area{
   height: 70rpx;
+  background: white;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.marqueeTxt {
+.marquee-text{
   white-space: nowrap;
   position: relative;
   top: 0;
 }
 
 /*概况信息区域样式*/
-.overviewArea{
-  height: 200rpx;
-  background: lightgrey;
-  padding-top: 20rpx;
-}
-.overviewTop{
-  height: 100rpx;
+.outline-area{
+  height: 100%;
   background: white;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-end;
+  margin-top: 20rpx;
 }
-.overviewBtm{
-  height: 100rpx;
-  background: white;
+.outline-block{
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
 }
-.overviewImg{
-  height: 60rpx;
-  width: 60rpx;
-}
-.bulletIcon{
-  height: 40rpx;
-  width: 40rpx;
+.outline-image{
+  width: 130rpx;
+  height: 130rpx;
+  padding-bottom: 10rpx;
 }
 
 /*发展规划区域样式*/
-.planArea{
-  height: 670rpx;
-  background: lightgrey;
-  padding-top: 10rpx;
-}
-.planTtl{
-  margin-left: 20rpx;
-  margin-bottom: 10rpx;
-}
-.planTxt{
-  height: 50rpx;
-  background: white;
-  font-size: 26rpx;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  border-bottom-style: solid;
-  border-width: thin;
-  border-color: lightgrey;
+.plan-area{
+  height: 100%;
+  background: #f5f5f5;
   padding-top: 20rpx;
 }
-.mapSec{
-  height: 500rpx;
+.plan-title{
+  margin-left: 30rpx;
+  margin-bottom: 20rpx;
+}
+.plan-item{
+  height: 80rpx;
   background: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 40rpx;
-}
-.mapImgSml{
-  height: 400rpx;
-  width: 80%;
-}
-
-/*投资专题区域样式*/
-.specialArea{
-  height: 550rpx;
-  background: lightgrey;
-  padding-top: 10rpx;
-}
-.specialTtl{
-  margin-left: 20rpx;
-  margin-bottom: 10rpx;
-}
-.specProjSec{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: -20rpx;
-}
-.specProjImg{
-  width: 300rpx;
-  height: 200rpx;
-  margin: 20rpx;
-}
-
-/*重点项目区域样式*/
-.keyArea{
-  height: 300rpx;
-  background: lightgrey;
-  padding-top: 10rpx;
-  border-bottom-style: solid;
-  border-width: thin;
-  border-color: grey;
-}
-.keyTtl{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left: 20rpx;
-  margin-right: 20rpx;
-  margin-bottom: 10rpx;
+  align-items: center;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  border-bottom-style: solid;
+  border-width: medium;
+  border-color: #f5f5f5;
 }
-.keyProjSec{
+.map-section{
+  height: 700rpx;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*投资专题区域样式*/
+.special-area{
+  height: 100%;
+  background: #f5f5f5;
+  padding-top: 20rpx;
+}
+.special-title{
+  margin-left: 30rpx;
+  margin-bottom: 20rpx;
+}
+.special-project-section{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: -20rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
 }
-.keyProjImg{
-  width: 300rpx;
-  height: 200rpx;
-  margin: 20rpx;
+.special-project-image{
+  width: 330rpx;
+  height: 240rpx;
+  margin-bottom: 20rpx;
+}
+
+/*重点项目区域样式*/
+.key-area{
+  height: 100%;
+  background: #f5f5f5;
+  padding-bottom: 10rpx;
+}
+.key-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-bottom: 20rpx;
+}
+.key-project-section{
+ margin-left: 30rpx;
+ padding-bottom: 10rpx;
+}
+.key-project-image{
+  width: 600rpx;
+  height: 340rpx;
+  margin-right: 30rpx;
 }
 
 /*投资咨询区域样式*/
-.consultArea{
-  height: 180rpx;
-}
-.consultTtl{
-  margin-top: 20rpx;
-  margin-left: 20rpx;
-}
-
-/*用户信息抽屉页样式*/
-/*.page-bottom{
+.consult-area{
   height: 100%;
-  width: 750rpx;
-  position: fixed; 
-  background: rgba(0, 68, 97, 1);
-  opacity: 1;
-  z-index: 0;
+  background: white;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
 }
-.wc{
+.consult-title{
   display: flex;
   flex-direction: row;
-  color: white;
+  justify-content: space-between;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-bottom: 20rpx;
+}
+.consult-item{
   height: 80rpx;
-  padding: 30rpx 0 30rpx 40rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 30rpx;
 }
-.page-content{
-  padding-top: 100rpx;
+.consult-text{
+  color: black;
+  font-size: 32rpx;
+  font-family: "微软雅黑";
+  margin-right: 20rpx;
 }
-.page-top{
-  height: auto;
-  width: 750rpx;
-  background: #FFFFFF;
-  z-index: 1;
-  transition: All 0.4s ease; 
-  -webkit-transition: All 0.4s ease;
-}
-.c-state1{
-  transform: rotate(0deg) scale(1) translate(75%,0%); 
-  -webkit-transform: rotate(0deg) scale(1) translate(75%,0%); 
-}*/

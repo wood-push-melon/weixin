@@ -3,38 +3,52 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/search/search",
+    "pages/overview/overview",
+    "pages/enterprise/enterprise",
+    "pages/policy/policy",
+    "pages/plan/plan",
+    "pages/special/special_01",
+    "pages/special/special_02",
+    "pages/special/special_03",
+    "pages/special/special_04",
+    "pages/key/key",
+    "pages/key/key_01",
+    "pages/key/key_02",
+    "pages/consult/consult",
     "pages/info/info",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/favorite/favorite",
+    "pages/about/about"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "lightgrey",
+    "navigationBarBackgroundColor": "#78D1E9",
     "navigationBarTitleText": "Ai石景山投资小助手",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
-    "color": "black",
-    "selectedColor": "#35495e",
+    "color": "grey",
+    "selectedColor": "#78D1E9",
     "backgroundColor": "white",
-    "borderStyle": "black",
+    "borderStyle": "grey",
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "投资导向",
-        "iconPath": "images/home.png",
-        "selectedIconPath": "images/home-selected.png"
+        "iconPath": "images/footer_guide.png",
+        "selectedIconPath": "images/footer_guide_pressed.png"
       },
       {
         "pagePath": "pages/info/info",
         "text": "区域资讯",
-        "iconPath": "images/news.png",
-        "selectedIconPath": "images/news-selected.png"
+        "iconPath": "images/footer_news.png",
+        "selectedIconPath": "images/footer_news_pressed.png"
       },
       {
         "pagePath": "pages/user/user",
         "text": "我",
-        "iconPath": "images/news.png",
-        "selectedIconPath": "images/news-selected.png"
+        "iconPath": "images/footer_mine.png",
+        "selectedIconPath": "images/footer_mine_pressed.png"
       }
     ],
     "position": "bottom"

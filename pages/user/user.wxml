@@ -1,13 +1,26 @@
 <!--pages/user/user.wxml-->
-<view class="headerArea">
+<view class="banner-area">
   <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <image class="userinfo-avatar" background-size="cover" src="{{userInfo.avatarUrl}}"></image>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
   </view>
+  
+  <view bindtap="toFavoriteView" class="button-block">
+    <view class="button-text">
+      <image mode="aspectFit" style="width:40rpx; padding-right:30rpx" src="/images/icon_favorite.png"></image>
+      <text style="color:black">我的收藏</text>
+    </view>
+    <image mode="aspectFit" style="width:17rpx" src="/images/icon_right.png"></image>
+  </view>
 </view>
-<view class="middleArea">
-  <view class="buttonSec"></view>
-</view>
-<view class="bottomArea">
-  <view class="buttonSec"></view>
+<view class="bottom-area">
+  <view bindtap="toAboutView" class="button-block">
+    <view class="button-text">
+      <image mode="aspectFit" style="width:40rpx; padding-right:30rpx" src="/images/icon_info.png"></image>
+      <text style="color:black">关于我们</text>
+    </view>
+    <image mode="aspectFit" style="width:17rpx" src="/images/icon_right.png"></image>
+  </view>
+
+  <image style="width:150rpx; height:150rpx; margin-top:150rpx; margin-left:40%" src="/images/icon_logo_grey.png"></image>
 </view>

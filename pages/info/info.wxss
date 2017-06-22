@@ -1,1 +1,58 @@
 /* pages/info/info.wxss */
+/*幻灯轮播区域样式*/
+.swiper-area{
+ height: 400rpx;
+ width: 100%;
+}
+.slide-image{
+ height: 100%;
+ width: 100%;
+}
+
+/*频道菜单区域样式*/
+.channel-area{
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  padding-top: 30rpx; 
+  margin-bottom: 20rpx; 
+}
+.channel-block{
+  width: 17%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding-bottom: 30rpx;
+}
+.channel-image{
+  width: 120rpx;
+  height: 120rpx;
+  padding-bottom: 10rpx;
+}
+
+/*文章预览区域样式*/
+.article-block{
+  height: 100%;
+  background: white;
+  padding: 30rpx;
+}
+.article-title{
+  color: black;
+  font-size: 34rpx;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-bottom: 30rpx;
+}
+.article-image{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

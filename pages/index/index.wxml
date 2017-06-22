@@ -1,104 +1,80 @@
 <!--index.wxml-->
-<!--用户信息抽屉页-->
-<!--<view class="page-bottom">
-  <view class="loginSec">
-    <image class="userinfo-avatar-bottom" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-  </view>
-  <view class="page-content">
-    <view class="wc">
-      <image class="bulletIcon" src="/images/star.png"></image>
-      <text style="padding-left: 20rpx">我的收藏</text>
-    </view>
-    <view class="wc">
-      <text>推荐给朋友</text>
-    </view>
-    <view class="wc">
-      <text>关于我们</text>
-    </view>
-  </view>
-  <view class="logoSecBottom">
-    <image class="logoImg" mode="aspectFit" src="/images/logo.jpg"></image>
-  </view>
-</view>-->
+<view class="main-page">
 
-<!--主页面-->
-<!--<view class="page-top {{open ? 'c-state1' : ''}}" style="{{open? 'position: fixed' : 'position: absolute'}}">-->
-  
-  <!--顶部区域-->
-  <view class="headerArea">
-    <!--<view class="loginSec">
-      <navigator navigate url="../login/login" style="{{isLogin? 'display: none;' : ''}}">登录</navigator>
-      <image bindtap="tapAvatar" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover" style="{{isLogin? '' : 'display: none'}}"></image>
-    </view>-->
-    <view class="logoSec">
-      <image class="logoImg" mode="aspectFit" src="/images/logo.jpg"></image>
-      <text class="logoTxt">移动投资服务平台</text>
+  <!--主页顶部区域-->
+  <view class="banner-area">
+    <view class="logo-section">
+      <image mode="aspectFit" style="width:160rpx; height:160rpx" src="/images/icon_logo.png"></image>
+      <text class="logo-text">移动投资服务平台</text>
     </view>
-    <view class="searchSec">
-      <icon class="searchIcn" type="search" size="14"></icon>
-      <input class="input" placeholder="请输入搜索信息" bindtap="toSearchView" />
+    <view class="search-section">
+      <icon type="search" size="14" style="margin-left:105rpx; margin-right:20rpx"></icon>
+      <input placeholder-class="search-text" placeholder="请输入搜索信息" bindtap="toSearchView" />
     </view>
   </view>
 
   <!--滚动新闻区域-->
-  <view class="feedArea">
-    <view class="marqueeTxt" style="{{open? 'display: none' : ''}} {{orientation}}:{{marqueeDistance}}px;font-size: {{size}}px;" wx:for="{{text}}">
+  <view class="feed-area">
+    <view class="marquee-text" style="{{open? 'display: none' : ''}} {{orientation}}:{{marqueeDistance}}px;font-size: {{size}}px;" wx:for="{{text}}">
       <text style="margin-left: {{gap}}px">{{item}}</text>
       <!--<text wx:if="{{marquee2copy_status}}" style="margin-left:{{marquee2_margin}}px;">{{item}}</text>-->
     </view>
   </view>
   
   <!--概况信息区域-->
-  <view class="overviewArea">
-    <view class="overviewTop">
-      <image class="overviewImg" src="/images/star.png"></image>
-      <image class="overviewImg" src="/images/star.png"></image>
-      <image class="overviewImg" src="/images/star.png"></image>
-    </view>
-    <view class="overviewBtm">
-      <text>区情概况</text>
-      <text>重点企业</text>
-      <text>投资政策</text>
+  <view class='outline-area'>
+    <view class='outline-block' wx:for="{{outlineButtons}}" wx:for-index="idx" wx:for-item="outline">
+        <image class='outline-image' src='{{outline.image}}'/> 
+        <text>{{outline.text}}</text>
     </view>
   </view>
 
   <!--发展规划区域-->
-  <view class="planArea">
-    <view class="planTtl">发展规划</view>
-    <view class="planTxt">
-      <text>“一轴、两带、三园、多支点”空间布局</text>
-      <text>查看详情>></text>
+  <view class="plan-area">
+    <view class="plan-title"><text>发展规划</text></view>
+    <view class="plan-item">
+      <text>"一轴、两带、三园、多支点"空间布局</text>
+      <text bindtap="toPlanView" class="detail-text">查看详情 >></text>
     </view>
-    <view class="mapSec">
-      <image class="mapImgSml" src="/images/logo.jpg"></image>
+    <view class="map-section">
+      <image mode="aspectFit" style="width:100%; height:100%" src="/images/map_small.png"></image>
     </view>
   </view>
 
   <!--投资专题区域-->
-  <view class="specialArea">
-    <view class="specialTtl">投资专题</view>
-    <view class="specProjSec">
-      <image class="specProjImg" src="/images/logo.jpg"></image>
-      <image class="specProjImg" src="/images/logo.jpg"></image>
-      <image class="specProjImg" src="/images/logo.jpg"></image>
-      <image class="specProjImg" src="/images/logo.jpg"></image>
+  <view class="special-area">
+    <view class="special-title"><text>投资专题</text></view>
+    <view class="special-project-section">
+      <image bindtap="toSpecialView_01" class="special-project-image" src="/images/logo.jpg"></image>
+      <image bindtap="toSpecialView_02" class="special-project-image" src="/images/logo.jpg"></image>
+      <image bindtap="toSpecialView_03" class="special-project-image" src="/images/logo.jpg"></image>
+      <image bindtap="toSpecialView_04" class="special-project-image" src="/images/logo.jpg"></image>
     </view>
   </view>
 
   <!--重点项目区域-->
-  <view class="keyArea">
-    <view class="keyTtl">
+  <view class="key-area">
+    <view class="key-title">
       <text>重点项目</text> 
-      <text>查看详情>></text>
+      <text bindtap="toKeyView" class="detail-text">查看详情 >></text>
     </view>
-    <view class="keyProjSec">
-      <image class="keyProjImg" src="/images/logo.jpg"></image>
-      <image class="keyProjImg" src="/images/logo.jpg"></image>
+    <view class="key-project-section">
+      <scroll-view scroll-x="true" style="white-space:nowrap"> 
+        <image bindtap="toKeyView_01" class="key-project-image" src="/images/logo.jpg"></image>
+        <image bindtap="toKeyView_02" class="key-project-image" src="/images/logo.jpg"></image>
+      </scroll-view>
     </view>
   </view>
 
   <!--投资咨询区域-->
-  <view class="consultArea">
-    <view class="consultTtl">投资咨询</view>
+  <view class="consult-area">
+    <view class="consult-title">
+      <text>投资咨询</text>
+      <text bindtap="toConsultView" class="detail-text">查看详情 >></text>
+    </view>
+    <view class="consult-item"><text class="consult-text">•</text><text class="consult-text">内资公司如何在石景山注册</text></view>
+    <view class="consult-item"><text class="consult-text">•</text><text class="consult-text">内资公司如何在石景山注册</text></view>
+    <view class="consult-item"><text class="consult-text">•</text><text class="consult-text">内资公司如何在石景山注册</text></view>
   </view>
-<!--</view>-->
+
+</view>

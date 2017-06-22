@@ -13,6 +13,21 @@ Page({
 
     open: false, //控制侧边栏开闭
     windowWidth: wx.getSystemInfoSync().windowWidth,
+
+    outlineButtons: [
+      {
+        "text": "区情概况",
+        "image": '../../images/icon_overview.png'
+      },
+      {
+        "text": "重点企业",
+        "image": '../../images/icon_enterprise.png'
+      },
+      {
+        "text": "投资政策",
+        "image": '../../images/icon_policy.png'
+      }
+    ]
   },
   onShow: function () {
     // 页面显示
@@ -28,7 +43,7 @@ Page({
       length: len.length * vm.data.size + vm.data.text.length * vm.data.gap,
       windowWidth: windowWidth
     });
-    vm.run();// 第一个字消失后立即从右边出现
+    vm.run(); // 第一个字消失后立即从右边出现
   },
   run: function () {
     var vm = this;
@@ -58,16 +73,76 @@ Page({
       });
     }
   },
-  toLoginView: function () {
-    wx.navigateTo({
-      url: '../login/login'
-    })
-  },
+  // toLoginView: function () {
+  //   wx.navigateTo({
+  //     url: '../login/login'
+  //   })
+  // }, // 跳转登录页面
   toSearchView: function () {
     wx.navigateTo({
       url: '../search/search'
     })
-  },
+  }, // 跳转搜索页面
+  toOverviewView: function () {
+    wx.navigateTo({
+      url: '../overview/overview'
+    })
+  }, // 跳转区情概况页面
+  toEnterpriseView: function () {
+    wx.navigateTo({
+      url: '../enterprise/enterprise'
+    })
+  }, // 跳转重点企业页面
+  toPolicyView: function () {
+    wx.navigateTo({
+      url: '../policy/policy'
+    })
+  }, // 跳转投资政策页面
+  toPlanView: function () {
+    wx.navigateTo({
+      url: '../plan/plan'
+    })
+  }, // 跳转发展规划页面
+  toSpecialView_01: function () {
+    wx.navigateTo({
+      url: '../special/special_01'
+    })
+  }, // 跳转投资专题（1）页面
+  toSpecialView_02: function () {
+    wx.navigateTo({
+      url: '../special/special_02'
+    })
+  }, // 跳转投资专题（2）页面
+  toSpecialView_03: function () {
+    wx.navigateTo({
+      url: '../special/special_03'
+    })
+  }, // 跳转投资专题（3）页面
+  toSpecialView_04: function () {
+    wx.navigateTo({
+      url: '../special/special_04'
+    })
+  }, // 跳转投资专题（4）页面
+  toKeyView: function () {
+    wx.navigateTo({
+      url: '../key/key'
+    })
+  }, // 跳转重点项目页面
+  toKeyView_01: function () {
+    wx.navigateTo({
+      url: '../key/key_01'
+    })
+  }, // 跳转重点项目（1）页面
+  toKeyView_02: function () {
+    wx.navigateTo({
+      url: '../key/key_02'
+    })
+  }, // 跳转重点项目（2）页面
+  toConsultView: function () {
+    wx.navigateTo({
+      url: '../consult/consult'
+    })
+  }, // 跳转投资咨询页面
   onLoad: function () {
     var that = this
     //调用应用实例的方法获取全局数据
