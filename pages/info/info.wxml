@@ -1,20 +1,28 @@
 <!--pages/info/info.wxml-->
 <view class="main-page">
-  <swiper class="swiper-area" indicator-dots="true" autoplay="true" interval="5000" duration="1000"> 
-    <block wx:for="{{movies}}" wx:for-index="index"> 
-      <swiper-item> 
-        <image src="{{item.url}}" class="slide-image" mode="aspectFill"/> 
-      </swiper-item> 
-    </block> 
-  </swiper> 
 
+  <!--幻灯轮播区域-->
+  <swiper class="slide-area" indicator-dots="true" interval="5000" autoplay="true">
+    <block wx:for="{{slideData}}" wx:key="id">
+      <swiper-item bindtap="toChannelPage" data-id="{{item.id}}">
+        <image class="slide-image" mode="scaletoFill" style="width: 100%" src="{{item.image}}" />
+        <view class="slide-mask"></view>
+        <view class="slide-title">
+          <text style="color:white; font-size:34rpx">{{item.text}}</text>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <!--频道菜单区域-->
   <view class='channel-area'>
-    <view class='channel-block' wx:for="{{channelButtons}}" wx:for-index="idx" wx:for-item="channel">
-        <image class='channel-image' src='{{channel.image}}'/> 
-        <text>{{channel.text}}</text>
+    <view wx:for="{{channelButtons}}" class='channel-block'>
+        <image class='channel-image' src='{{item.image}}'/> 
+        <text>{{item.text}}</text>
     </view>
   </view>
 
+  <!--文章预览区域-->
   <view class="article-block">
     <text class="article-title">中关村虚拟现实产业园在石景山启动（附规划和政策）</text>
     <view class="article-image">
@@ -24,4 +32,5 @@
   </view>
 
   <image style="width:150rpx; height:150rpx; margin-top:150rpx; margin-left:40%" src="/images/icon_logo_grey.png"></image>
+
 </view>

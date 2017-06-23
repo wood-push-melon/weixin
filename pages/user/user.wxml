@@ -5,7 +5,7 @@
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
   </view>
   
-  <view bindtap="toFavoriteView" class="button-block">
+  <view bindtap="toFavoritePage" class="button-block">
     <view class="button-text">
       <image mode="aspectFit" style="width:40rpx; padding-right:30rpx" src="/images/icon_favorite.png"></image>
       <text style="color:black">我的收藏</text>
@@ -14,7 +14,7 @@
   </view>
 </view>
 <view class="bottom-area">
-  <view bindtap="toAboutView" class="button-block">
+  <view bindtap="toAboutPage" class="button-block">
     <view class="button-text">
       <image mode="aspectFit" style="width:40rpx; padding-right:30rpx" src="/images/icon_info.png"></image>
       <text style="color:black">关于我们</text>

@@ -11,12 +11,12 @@ Page({
       url: '../logs/logs'
     })
   },
-  toFavoriteView: function () {
+  toFavoritePage: function () {
     wx.navigateTo({
       url: '../favorite/favorite'
     })
   }, // 跳转收藏页面
-  toAboutView: function () {
+  toAboutPage: function () {
     wx.navigateTo({
       url: '../about/about'
     })

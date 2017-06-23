@@ -1,12 +1,40 @@
 /* pages/info/info.wxss */
 /*幻灯轮播区域样式*/
-.swiper-area{
- height: 400rpx;
- width: 100%;
+.slide-area{
+  position: relative;
+  height: 450rpx;
+}
+.slide-area .wx-swiper-dot{
+  background: grey;
+}
+.slide-area .wx-swiper-dot-active{
+  background: #78D1E9;
 }
 .slide-image{
- height: 100%;
- width: 100%;
+  width: 100%;
+  display: block;
+}
+.slide-mask{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, .3)
+}
+.slide-title{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  color: white;
+  background: rgba(0, 0, 0, .3);
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 20rpx 20rpx 50rpx 20rpx;
 }
 
 /*频道菜单区域样式*/
@@ -16,9 +44,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding-left: 20rpx;
-  padding-right: 20rpx;
-  padding-top: 30rpx; 
+  padding: 30rpx 20rpx 0 20rpx;
   margin-bottom: 20rpx; 
 }
 .channel-block{

@@ -9,23 +9,23 @@
     </view>
     <view class="search-section">
       <icon type="search" size="14" style="margin-left:105rpx; margin-right:20rpx"></icon>
-      <input placeholder-class="search-text" placeholder="请输入搜索信息" bindtap="toSearchView" />
+      <input placeholder-class="search-text" placeholder="请输入搜索信息" bindtap="toSearchPage" />
     </view>
   </view>
 
   <!--滚动新闻区域-->
-  <view class="feed-area">
+  <!--<view class="feed-area">
     <view class="marquee-text" style="{{open? 'display: none' : ''}} {{orientation}}:{{marqueeDistance}}px;font-size: {{size}}px;" wx:for="{{text}}">
-      <text style="margin-left: {{gap}}px">{{item}}</text>
+      <text style="margin-left: {{gap}}px">{{item}}</text>-->
       <!--<text wx:if="{{marquee2copy_status}}" style="margin-left:{{marquee2_margin}}px;">{{item}}</text>-->
-    </view>
-  </view>
+    <!--</view>
+  </view>-->
   
   <!--概况信息区域-->
   <view class='outline-area'>
-    <view class='outline-block' wx:for="{{outlineButtons}}" wx:for-index="idx" wx:for-item="outline">
-        <image class='outline-image' src='{{outline.image}}'/> 
-        <text>{{outline.text}}</text>
+    <view wx:for="{{outlineButtons}}" bindtap="toOutlinePage" data-id="{{item.id}}" class="outline-block">
+        <image class="outline-image" src="{{item.image}}"/> 
+        <text>{{item.text}}</text>
     </view>
   </view>
 
@@ -34,7 +34,7 @@
     <view class="plan-title"><text>发展规划</text></view>
     <view class="plan-item">
       <text>"一轴、两带、三园、多支点"空间布局</text>
-      <text bindtap="toPlanView" class="detail-text">查看详情 >></text>
+      <text bindtap="toPlanPage" class="detail-text">查看详情 >></text>
     </view>
     <view class="map-section">
       <image mode="aspectFit" style="width:100%; height:100%" src="/images/map_small.png"></image>
@@ -45,10 +45,9 @@
   <view class="special-area">
     <view class="special-title"><text>投资专题</text></view>
     <view class="special-project-section">
-      <image bindtap="toSpecialView_01" class="special-project-image" src="/images/logo.jpg"></image>
-      <image bindtap="toSpecialView_02" class="special-project-image" src="/images/logo.jpg"></image>
-      <image bindtap="toSpecialView_03" class="special-project-image" src="/images/logo.jpg"></image>
-      <image bindtap="toSpecialView_04" class="special-project-image" src="/images/logo.jpg"></image>
+      <view wx:for="{{specialButtons}}" bindtap="toSpecialPageDetail" data-id="{{item.id}}" class="special-project-block">
+        <image class="special-project-image" src="{{item.image}}"/>
+      </view>
     </view>
   </view>
 
@@ -56,25 +55,26 @@
   <view class="key-area">
     <view class="key-title">
       <text>重点项目</text> 
-      <text bindtap="toKeyView" class="detail-text">查看详情 >></text>
+      <text bindtap="toKeyPage" class="detail-text">查看详情 >></text>
     </view>
-    <view class="key-project-section">
-      <scroll-view scroll-x="true" style="white-space:nowrap"> 
-        <image bindtap="toKeyView_01" class="key-project-image" src="/images/logo.jpg"></image>
-        <image bindtap="toKeyView_02" class="key-project-image" src="/images/logo.jpg"></image>
-      </scroll-view>
-    </view>
+    <scroll-view scroll-x="true" style="white-space:nowrap"> 
+      <view class="key-project-section" >
+        <view wx:for="{{keyButtons}}" bindtap="toKeyPageDetail" data-id="{{item.id}}" class="key-project-block">
+          <image class="key-project-image" src="{{item.image}}"/>
+        </view>
+      </view>
+    </scroll-view>
   </view>
 
   <!--投资咨询区域-->
   <view class="consult-area">
     <view class="consult-title">
       <text>投资咨询</text>
-      <text bindtap="toConsultView" class="detail-text">查看详情 >></text>
+      <text bindtap="toConsultPage" class="detail-text">查看详情 >></text>
     </view>
-    <view class="consult-item"><text class="consult-text">•</text><text class="consult-text">内资公司如何在石景山注册</text></view>
-    <view class="consult-item"><text class="consult-text">•</text><text class="consult-text">内资公司如何在石景山注册</text></view>
-    <view class="consult-item"><text class="consult-text">•</text><text class="consult-text">内资公司如何在石景山注册</text></view>
+    <view wx:for="{{consultTitle}}" class="consult-item">
+      <text class="consult-text">•</text><text class="consult-text">{{item.title}}</text>
+    </view>
   </view>
 
 </view>

@@ -5,7 +5,20 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    articleData: [
+      {
+        "id": '0',
+        "title": '启迪香山',
+        "image": '../../images/logo.jpg',
+        "url": '../key/key_01'
+      },
+      {
+        "id": '1',
+        "title": '中海大厦',
+        "image": '../../images/banner_guide.png',
+        "url": '../key/key_02'
+      }
+    ]
   },
 
   /**
@@ -64,14 +77,11 @@ Page({
   
   },
   
-  toKeyView_01: function () {
+  // 跳转重点项目文章页面
+  toKeyPageDetail: function (event) {
+    var id = event.currentTarget.dataset.id;
     wx.navigateTo({
-      url: '../key/key_01'
+      url: this.data.articleData[id].url
     })
-  }, // 跳转重点项目（1）页面
-  toKeyView_02: function () {
-    wx.navigateTo({
-      url: '../key/key_02'
-    })
-  }, // 跳转重点项目（2）页面
+  },
 })
