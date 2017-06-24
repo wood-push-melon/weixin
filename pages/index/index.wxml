@@ -22,10 +22,10 @@
   </view>-->
   
   <!--概况信息区域-->
-  <view class='outline-area'>
+  <view class="outline-area">
     <view wx:for="{{outlineButtons}}" bindtap="toOutlinePage" data-id="{{item.id}}" class="outline-block">
         <image class="outline-image" src="{{item.image}}"/> 
-        <text>{{item.text}}</text>
+        <text>{{item.title}}</text>
     </view>
   </view>
 

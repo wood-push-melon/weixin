@@ -8,26 +8,26 @@
         <image class="slide-image" mode="scaletoFill" style="width: 100%" src="{{item.image}}" />
         <view class="slide-mask"></view>
         <view class="slide-title">
-          <text style="color:white; font-size:34rpx">{{item.text}}</text>
+          <text style="color:white; font-size:34rpx">{{item.title}}</text>
         </view>
       </swiper-item>
     </block>
   </swiper>
 
   <!--频道菜单区域-->
-  <view class='channel-area'>
-    <view wx:for="{{channelButtons}}" class='channel-block'>
-        <image class='channel-image' src='{{item.image}}'/> 
+  <view class="channel-area">
+    <view wx:for="{{channelButtons}}" bindtap="foldButtons" data-id="{{item.id}}" class="channel-block">
+        <image class="channel-image" src="{{item.image}}"/> 
         <text>{{item.text}}</text>
     </view>
   </view>
 
   <!--文章预览区域-->
-  <view class="article-block">
-    <text class="article-title">中关村虚拟现实产业园在石景山启动（附规划和政策）</text>
-    <view class="article-image">
-      <image mode="scaleToFill" style="height:200rpx" src="/images/banner_guide.png"></image>
-      <image mode="scaleToFill" style="height:200rpx" src="/images/banner_guide.png"></image>
+  <view wx:for="{{articleData}}" class="article-block">
+    <text class="article-title">{{item.title}}</text>
+    <view wx:for="{{item.image}}" wx:for-item="cell" wx:for-index="idx" class="article-image">
+      <image mode="scaleToFill" style="height:200rpx" src="{{cell.idx}}"/>
+      <!--<image mode="scaleToFill" style="height:200rpx" src="/images/banner_guide.png"></image>-->
     </view>
   </view>
 

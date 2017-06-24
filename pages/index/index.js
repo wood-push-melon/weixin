@@ -17,19 +17,19 @@ Page({
     outlineButtons: [
       {
         "id": '0',
-        "text": "区情概况",
+        "title": "区情概况",
         "image": '../../images/icon_overview.png',
         "url": '../overview/overview'
       },
       {
         "id": '1',
-        "text": "重点企业",
+        "title": "重点企业",
         "image": '../../images/icon_enterprise.png',
         "url": '../enterprise/enterprise'
       },
       {
         "id": '2',
-        "text": "投资政策",
+        "title": "投资政策",
         "image": '../../images/icon_policy.png',
         "url": '../policy/policy'
       }
