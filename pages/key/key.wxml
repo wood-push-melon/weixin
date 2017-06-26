@@ -1,0 +1,12 @@
+<!--pages/key/key.wxml-->
+<view class="main-page">
+
+  <view wx:for="{{articleData}}" bindtap="toKeyPageDetail" data-id="{{item.id}}" class="key-project-block">
+    <image class="key-project-image" src="{{item.image}}"/>
+    <view class="key-project-text">
+      <text>{{item.title}}</text>
+      <image mode="aspectFit" style="width:17rpx" src="/images/icon_right.png"></image>
+    </view>
+  </view>
+
+</view>

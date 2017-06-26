@@ -1,0 +1,84 @@
+/* pages/info/info.wxss */
+/*幻灯轮播区域样式*/
+.slide-area{
+  position: relative;
+  height: 450rpx;
+}
+.slide-area .wx-swiper-dot{
+  background: grey;
+}
+.slide-area .wx-swiper-dot-active{
+  background: #78D1E9;
+}
+.slide-image{
+  width: 100%;
+  display: block;
+}
+.slide-mask{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, .3)
+}
+.slide-title{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  color: white;
+  background: rgba(0, 0, 0, .3);
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 20rpx 20rpx 50rpx 20rpx;
+}
+
+/*频道菜单区域样式*/
+.channel-area{
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 30rpx 20rpx 0 20rpx;
+  margin-bottom: 20rpx; 
+}
+.channel-block{
+  width: 17%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding-bottom: 30rpx;
+}
+.channel-image{
+  width: 100rpx;
+  height: 100rpx;
+  padding-bottom: 10rpx;
+}
+
+/*文章预览区域样式*/
+.article-block{
+  height: 100%;
+  background: white;
+  padding: 30rpx;
+}
+.article-title{
+  color: black;
+  font-size: 34rpx;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-bottom: 30rpx;
+}
+.article-image{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

@@ -1,77 +1,80 @@
 <!--index.wxml-->
+<view class="main-page">
 
-<view class="page-bottom">
-  <view class="loginSec">
-    <image class="userinfo-avatar-bottom" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-  </view>
-  <view class="page-content">
-    <view class="wc">
-      <image class="bulletIcon" src="/images/star.png"></image>
-      <text style="padding-left: 20rpx">我的收藏</text>
+  <!--主页顶部区域-->
+  <view class="banner-area">
+    <view class="logo-section">
+      <image mode="aspectFit" style="width:160rpx; height:160rpx" src="/images/icon_logo.png"></image>
+      <text class="logo-text">移动投资服务平台</text>
     </view>
-    <view class="wc">
-      <text>推荐给朋友</text>
-    </view>
-    <view class="wc">
-      <text>关于我们</text>
-    </view>
-  </view>
-  <view class="logoSecBottom">
-    <image class="logoImg" mode="aspectFit" src="/images/logo.jpg"></image>
-  </view>
-</view>
-
-<view class="page-top {{open ? 'c-state1' : ''}}" style="{{open? 'position: fixed' : 'position:absolute'}}">
-  <view class="headerArea">
-    <view class="loginSec">
-      <navigator navigate url="../login/login" style="{{isLogin? 'display: none;' : ''}}">登录</navigator>
-      <image bindtap="tapAvatar" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover" style="{{isLogin? '' : 'display: none'}}"></image>
-    </view>
-
-    <view class="logoSec">
-      <image class="logoImg" mode="aspectFit" src="/images/logo.jpg"></image>
-    </view>
-    <text class="logoTxt">移动投资服务平台</text>
-
-    <view class="searchSec">
-      <icon class="searchIcn" type="search" size="14"></icon>
-      <input class="input" placeholder="请输入关键字" bindtap="toSearchView" />
+    <view class="search-section">
+      <icon type="search" size="14" style="margin-left:105rpx; margin-right:20rpx"></icon>
+      <input placeholder-class="search-text" placeholder="请输入搜索信息" bindtap="toSearchPage" />
     </view>
   </view>
 
-  <view class="feedArea">
-    <view class="marquee_text" style="{{open? 'display: none' : ''}} {{orientation}}:{{marqueeDistance}}px;font-size: {{size}}px;" wx:for="{{text}}">
-      <text style="margin-left: {{gap}}px">{{item}}</text>
+  <!--滚动新闻区域-->
+  <!--<view class="feed-area">
+    <view class="marquee-text" style="{{open? 'display: none' : ''}} {{orientation}}:{{marqueeDistance}}px;font-size: {{size}}px;" wx:for="{{text}}">
+      <text style="margin-left: {{gap}}px">{{item}}</text>-->
       <!--<text wx:if="{{marquee2copy_status}}" style="margin-left:{{marquee2_margin}}px;">{{item}}</text>-->
+    <!--</view>
+  </view>-->
+  
+  <!--概况信息区域-->
+  <view class="outline-area">
+    <view wx:for="{{outlineButtons}}" bindtap="toOutlinePage" data-id="{{item.id}}" class="outline-block">
+        <image class="outline-image" src="{{item.image}}"/> 
+        <text>{{item.title}}</text>
     </view>
   </view>
 
-  <view class="overviewArea">
-    <view class="overviewTop">
-      <image class="overviewImg" src="/images/star.png"></image>
-      <image class="overviewImg" src="/images/star.png"></image>
-      <image class="overviewImg" src="/images/star.png"></image>
+  <!--发展规划区域-->
+  <view class="plan-area">
+    <view class="plan-title"><text>发展规划</text></view>
+    <view class="plan-item">
+      <text>"一轴、两带、三园、多支点"空间布局</text>
+      <text bindtap="toPlanPage" class="detail-text">查看详情 >></text>
     </view>
-    <view class="overviewBtm">
-      <text>区情概况</text>
-      <text>重点企业</text>
-      <text>投资政策</text>
+    <view class="map-section">
+      <image mode="aspectFit" style="width:100%; height:100%" src="/images/map_small.png"></image>
     </view>
   </view>
 
-  <view class="planArea">
-    <view class="planTtl">产业规划</view>
+  <!--投资专题区域-->
+  <view class="special-area">
+    <view class="special-title"><text>投资专题</text></view>
+    <view class="special-project-section">
+      <view wx:for="{{specialButtons}}" bindtap="toSpecialPageDetail" data-id="{{item.id}}" class="special-project-block">
+        <image class="special-project-image" src="{{item.image}}"/>
+      </view>
+    </view>
   </view>
 
-  <view class="keyArea">
-    <view class="keyTtl">重点项目</view>
+  <!--重点项目区域-->
+  <view class="key-area">
+    <view class="key-title">
+      <text>重点项目</text> 
+      <text bindtap="toKeyPage" class="detail-text">查看详情 >></text>
+    </view>
+    <scroll-view scroll-x="true" style="white-space:nowrap"> 
+      <view class="key-project-section" >
+        <view wx:for="{{keyButtons}}" bindtap="toKeyPageDetail" data-id="{{item.id}}" class="key-project-block">
+          <image class="key-project-image" src="{{item.image}}"/>
+        </view>
+      </view>
+    </scroll-view>
   </view>
 
-  <view class="specialArea">
-    <view class="specialTtl">投资专题</view>
+  <!--投资咨询区域-->
+  <view class="consult-area">
+    <view class="consult-title">
+      <text>投资咨询</text>
+      <text bindtap="toConsultPage" class="detail-text">查看详情 >></text>
+    </view>
+    <view wx:for="{{consultTitle}}" class="consult-item">
+      <text class="consult-text">•</text><text class="consult-text">{{item.title}}</text>
+    </view>
   </view>
 
-  <view class="consultArea">
-    <view class="consultTtl">投资咨询</view>
-  </view>
 </view>

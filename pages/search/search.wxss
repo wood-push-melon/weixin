@@ -29,15 +29,12 @@
   border: none !important;
   color: cornflowerblue !important;
 }
-
 .wxSearchTitle{
   display: block;
   padding: 10px 5px 5px 10px;
   font-size: 12px;
   text-align: center;
 }
-
-
 .wxSearchMindKeyItem{
   padding: 10px 5px;
   border-bottom: 1px solid #eee;
@@ -45,13 +42,11 @@
   font-size: 14px;
   color: cornflowerblue;
 }
-
 .wxSearchKeyList{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-
 .wxSearchKeyItem{
   flex: 0 0 20%;
   font-size: 14px;
