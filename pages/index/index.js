@@ -3,7 +3,10 @@ var app = getApp()
 Page({
   data: {
     // isLogin: app.globalData.isLogin,
-    // text: Array("特朗普今日会见奥巴马", "习近平主席到访北京石景山区"),
+    indicatorDots: false,
+    feeds: ["特朗普今日会见奥巴马", "习近平主席到访北京石景山区"],
+    feed_idx: 1,
+    first_visit: true,
     // marqueePace: 1,//滚动速度
     // marqueeDistance: 0,
     // size: 14,
@@ -90,6 +93,11 @@ Page({
         "title": '343内资公司如何在石景山注册'
       }
     ]
+  },
+  swiperChange: function(e) {
+    this.setData({
+      feed_idx: e.detail.current + 1
+    })
   },
   // onShow: function () {
   //   // 页面显示
@@ -182,8 +190,27 @@ Page({
     })
   }, 
 
+  onShow: function () {
+    // 判断是否第一次进入首页
+    var visited = wx.getStorageSync('fv')
+
+    console.log('cache: ' + visited)
+    if (visited.length == 0) {
+      wx.setStorageSync('fv', 'yes')
+    } else {
+      this.setData({
+        first_visit: false
+      })
+    }
+    console.log(this.data.first_visit)
+  },
+
   onLoad: function () {
     var that = this
+    //获取滚动新闻条目数量
+    this.setData({
+      feeds_len: this.data.feeds.length
+    })
     //调用应用实例的方法获取全局数据
     app.getUserInfo(function(userInfo){
       //更新数据

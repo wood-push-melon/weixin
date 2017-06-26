@@ -36,17 +36,37 @@
 
 /*滚动新闻区域样式*/
 .feed-area{
-  height: 70rpx;
+  height: 100rpx;
   background: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  /*display: flex;*/
+  /*flex-direction: row;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
 }
-.marquee-text{
-  white-space: nowrap;
+.feed-swiper{
+  height: 100rpx;
+}
+.slide-text{
   position: relative;
-  top: 0;
+  /*bottom: 0;*/
+  /*left: 0;*/
+  /*right: 0;*/
+  /*width: 100%;*/
+  font-size: 50rpx;
+  color: white;
+  text-align: center;
+  /*vertical-align: center;*/
+  /*box-sizing: border-box;*/
+  /*overflow: hidden;*/
+  /*white-space: nowrap;*/
+  /*text-overflow: ellipsis;*/
+  padding-top: 10rpx;
+  padding-bottom: 50rpx;
+}
+.index{
+  margin-right: 20rpx;
+  margin-top: 24rpx;
+  float: right;
 }
 
 /*概况信息区域样式*/
@@ -100,10 +120,21 @@
 .map-section{
   height: 700rpx;
   background: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+}
+.map{
+  z-index: 1;
+  position: absolute;
+}
+.map-finger{
+  z-index: 3;
+  float: right;
+  margin-top: 180rpx;
+  margin-right: 100rpx;
 }
 
 /*投资专题区域样式*/
