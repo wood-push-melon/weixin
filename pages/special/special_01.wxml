@@ -1,2 +1,14 @@
 <!--pages/special/special_01.wxml-->
-<text>pages/special/special_01.wxml</text>
+<text>投资专题第一篇文章</text>
+<image src="../../images/logo.jpg"/>
+
+<view class="toolbar">
+  <view class="inner">
+    <view class="item" bindtap="collectOrNot" wx:if="{{isCollect}}">
+      <image src="../../images/star_active.png" />
+    </view>
+    <view class="item" bindtap="collectOrNot" wx:else>
+      <image src="../../images/star.png" />
+    </view>
+  </view>
+</view>

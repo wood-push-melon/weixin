@@ -1,1 +1,27 @@
 /* pages/favorite/favorite.wxss */
+
+.key-project-block{
+  padding-top: 40rpx;
+}
+.key-project-image{
+  width: 90%;
+  height: 300rpx;
+  margin-left: 5%;
+  margin-bottom: -10rpx;
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+}
+.key-project-text{
+  width: 80%;
+  height: 80rpx;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+}

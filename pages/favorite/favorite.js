@@ -5,14 +5,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    pageData: {},
+    hasData: false,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var pageData = wx.getStorageSync('pageData') || []
+    if (pageData.length != 0) {
+      this.setData({
+        pageData: pageData,
+        hasData: true});
+      console.log(this.data.hasData);
+    } else {
+      this.setData({hasData: false})
+      console.log(this.data.hasData);
+    }
   },
 
   /**
@@ -62,5 +72,23 @@ Page({
    */
   onShareAppMessage: function () {
   
-  }
+  },
+
+  // 跳转重点项目文章页面
+  toPageDetail: function (event) {
+    var id = event.currentTarget.dataset.id;
+    var pageData = this.data.pageData;
+
+    var clickedPage;
+    for(var i = 0; i < pageData.length; i++) {
+      
+      if (pageData[i].id == id) {
+        clickedPage = pageData[i];
+        break;
+      }
+    }
+    wx.navigateTo({
+      url: clickedPage.url
+    })
+  },
 })

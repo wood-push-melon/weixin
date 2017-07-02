@@ -1,2 +1,14 @@
 <!--pages/favorite/favorite.wxml-->
-<text>pages/favorite/favorite.wxml</text>
+
+<view class="main-page">
+  <view class="noData" style="{{hasData ? 'display:none' : ''}}">
+    <text>您目前还没有收藏任何文章</text>
+  </view>
+  <view wx:for="{{pageData}}" bindtap="toPageDetail" data-id="{{item.id}}" class="key-project-block">
+    <image class="key-project-image" src="{{item.images[0]}}"/>
+    <view class="key-project-text">
+      <text>{{item.title}}</text>
+      <image mode="aspectFit" style="width:17rpx" src="/images/icon_right.png"></image>
+    </view>
+  </view>
+</view>
