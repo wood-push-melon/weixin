@@ -3,7 +3,7 @@
 .banner-area{
   width: 100%;
   height: 600rpx;
-  background-image: url("https://image.ibb.co/gokkhk/home_banner.png");
+  background-image: url("https://preview.ibb.co/kmbUKa/banner_guide.png");
   background-size: 100%;
 }
 .logo-section{
@@ -36,17 +36,22 @@
 
 /*滚动新闻区域样式*/
 .feed-area{
-  height: 70rpx;
+  width: 100%;
+  height: 40rpx;
   background: white;
+  padding: 25rpx 30rpx 25rpx 30rpx;
+}
+.feed-item{
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
 }
-.marquee-text{
-  white-space: nowrap;
-  position: relative;
-  top: 0;
+.feed-text{
+  width: 84%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*概况信息区域样式*/
@@ -98,12 +103,8 @@
   border-color: #f5f5f5;
 }
 .map-section{
-  height: 700rpx;
-  background: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 100%;
+  background: #D6C8BA;
 }
 
 /*投资专题区域样式*/
@@ -125,12 +126,21 @@
   margin-right: 30rpx;
 }
 .special-project-block{
-  height: 100%;
-}
-.special-project-image{
   width: 330rpx;
-  height: 240rpx;
+  height: 240rpx;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 20rpx;
+}
+.special-project-icon{
+  width: 220rpx;
+  height: 76rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://image.ibb.co/bFxDoQ/icon_frame.png");
+  background-size: 100%;
 }
 
 /*重点项目区域样式*/
@@ -151,15 +161,27 @@
   display: flex;
   flex-wrap: nowrap;
   margin-left: 30rpx;
-  padding-bottom: 10rpx;
+  padding-bottom: 20rpx;
 }
 .key-project-block{
-  height: 100%；
+  height: 100%;
 }
 .key-project-image{
   width: 600rpx;
   height: 340rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 30rpx;
+}
+.key-project-icon{
+  width: 220rpx;
+  height: 76rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://image.ibb.co/bFxDoQ/icon_frame.png");
+  background-size: 100%;
 }
 
 /*投资咨询区域样式*/
@@ -184,6 +206,15 @@
   justify-content: flex-start;
   align-items: center;
   margin-left: 30rpx;
+}
+.consult-item-clicked{
+  height: 80rpx;
+  background: #78D1E9;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 30rpx;
 }
 .consult-text{
   color: black;

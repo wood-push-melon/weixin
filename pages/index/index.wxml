@@ -14,12 +14,17 @@
   </view>
 
   <!--滚动新闻区域-->
-  <!--<view class="feed-area">
-    <view class="marquee-text" style="{{open? 'display: none' : ''}} {{orientation}}:{{marqueeDistance}}px;font-size: {{size}}px;" wx:for="{{text}}">
-      <text style="margin-left: {{gap}}px">{{item}}</text>-->
-      <!--<text wx:if="{{marquee2copy_status}}" style="margin-left:{{marquee2_margin}}px;">{{item}}</text>-->
-    <!--</view>
-  </view>-->
+  <swiper class="feed-area" bindchange="swiperChange" indicator-dots="{{}}" vertical="true" autoplay="true" interval="5000" circular="true">
+    <block wx:for="{{feedsData}}">
+      <swiper-item bindtap="toFeedsPageDetail" data-id="{{item.id}}" class="feed-item">
+        <image mode="aspectFit" style="width:35rpx; margin-right:30rpx" src="/images/icon_feed.png"></image>
+        <view class="feed-text">
+          <text>{{item.title}}</text>
+          <text style="color:lightgrey">{{feed_idx}}/{{feed_len}}</text>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
   
   <!--概况信息区域-->
   <view class="outline-area">
@@ -37,7 +42,7 @@
       <text bindtap="toPlanPage" class="detail-text">查看详情 >></text>
     </view>
     <view class="map-section">
-      <image mode="aspectFit" style="width:100%; height:100%" src="/images/map_small.png"></image>
+      <image mode="aspectFit" style="width:100%" src="/images/map_small.gif"></image>
     </view>
   </view>
 
@@ -45,8 +50,9 @@
   <view class="special-area">
     <view class="special-title"><text>投资专题</text></view>
     <view class="special-project-section">
-      <view wx:for="{{specialButtons}}" bindtap="toSpecialPageDetail" data-id="{{item.id}}" class="special-project-block">
-        <image class="special-project-image" src="{{item.image}}"/>
+      <view wx:for="{{specialButtons}}" bindtap="toSpecialPageDetail" data-id="{{item.id}}" class="special-project-block" style="background-image:url({{item.image}}); background-size:100%">
+        <view class="special-project-block" style="{{item.isClicked? '' : 'display: none'}}; background:#78D1E9; position:absolute; z-index:1"></view>
+        <view class="special-project-icon" style="position:absolute; z-index:2"><text style="color:white">{{item.title}}</text></view>
       </view>
     </view>
   </view>
@@ -60,7 +66,10 @@
     <scroll-view scroll-x="true" style="white-space:nowrap"> 
       <view class="key-project-section" >
         <view wx:for="{{keyButtons}}" bindtap="toKeyPageDetail" data-id="{{item.id}}" class="key-project-block">
-          <image class="key-project-image" src="{{item.image}}"/>
+          <view class="key-project-image" style="background-image:url({{item.image}}); background-size:100%">
+            <view class="key-project-image" style="{{item.isClicked? '' : 'display: none'}}; background:#78D1E9; position:absolute; z-index:1"></view>
+            <view class="key-project-icon" style="position:absolute; z-index:2"><text style="color:white">{{item.title}}</text></view>
+          </view>
         </view>
       </view>
     </scroll-view>
@@ -72,7 +81,7 @@
       <text>投资咨询</text>
       <text bindtap="toConsultPage" class="detail-text">查看详情 >></text>
     </view>
-    <view wx:for="{{consultTitle}}" class="consult-item">
+    <view wx:for="{{consultTitle}}" bindtap="toConsultPageDetail" data-id="{{item.id}}" class="{{item.isClicked? 'consult-item-clicked' : 'consult-item'}}">
       <text class="consult-text">•</text><text class="consult-text">{{item.title}}</text>
     </view>
   </view>

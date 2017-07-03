@@ -13,7 +13,7 @@ Page({
     console.log('onLoad')
     var that = this
     //初始化的时候渲染wxSearchdata
-    WxSearch.init(that, 43, ['石景山', '孵化器', '投资', '人工智能', 'A轮'], true);
+    WxSearch.init(that, 43, ['石景山', '孵化器', '北京保险产业园', '人工智能', 'A轮'], true);
     WxSearch.initMindKeys(['Ai石景山', '石景山投资', '创业孵化器', '人工智能创业','A轮融资']);
   },
   wxSearchFn: function (e) {
