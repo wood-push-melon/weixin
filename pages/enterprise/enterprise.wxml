@@ -1,2 +1,18 @@
 <!--pages/enterprise/enterprise.wxml-->
-<text>pages/enterprise/enterprise.wxml</text>
+<view class="main-page">
+  <view class="vertical-space"></view>
+
+  <view class="category-block">
+    <text class="category-title">高新技术产业</text>
+    <view class="list-section">
+      <image wx:for="{{enterpriseSet_01}}" mode="scaleToFill" class="list-item" style="width:{{item.width}}rpx" src="{{item.image}}"/>
+    </view>
+  </view>
+  <view class="category-block">
+    <text class="category-title">旅游休闲产业</text>
+    <view class="list-section">
+      <image wx:for="{{enterpriseSet_02}}" mode="scaleToFill" class="list-item" style="width:{{item.width}}rpx" src="{{item.image}}"/>
+    </view>
+  </view>
+
+</view>

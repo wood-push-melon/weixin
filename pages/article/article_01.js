@@ -1,4 +1,4 @@
-// pages/policy/policy.js
+// pages/article/article_01.js
 Page({
 
   /**

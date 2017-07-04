@@ -3,9 +3,10 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/search/search",
-    "pages/overview/overview",
+    "pages/outline/overview",
+    "pages/outline/policy",
     "pages/enterprise/enterprise",
-    "pages/policy/policy",
+    "pages/enterprise/enterprise_01",
     "pages/plan/plan",
     "pages/special/special_01",
     "pages/special/special_02",
@@ -15,7 +16,9 @@
     "pages/key/key_01",
     "pages/key/key_02",
     "pages/consult/consult",
-    "pages/info/info",
+    "pages/news/news",
+    "pages/article/article_01",
+    "pages/article/article_02",
     "pages/user/user",
     "pages/favorite/favorite",
     "pages/about/about"
@@ -39,7 +42,7 @@
         "selectedIconPath": "images/footer_guide_pressed.png"
       },
       {
-        "pagePath": "pages/info/info",
+        "pagePath": "pages/news/news",
         "text": "区域资讯",
         "iconPath": "images/footer_news.png",
         "selectedIconPath": "images/footer_news_pressed.png"
@@ -47,8 +50,8 @@
       {
         "pagePath": "pages/user/user",
         "text": "我",
-        "iconPath": "images/footer_mine.png",
-        "selectedIconPath": "images/footer_mine_pressed.png"
+        "iconPath": "images/footer_me.png",
+        "selectedIconPath": "images/footer_me_pressed.png"
       }
     ],
     "position": "bottom"

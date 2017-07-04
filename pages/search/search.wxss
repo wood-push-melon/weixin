@@ -12,54 +12,68 @@
 }
 .wxSearch-section{
   background-color: #fff;
-  padding: 5px 10px;
+  padding-left: 11px;
   border: 1px #eee solid;
 }
 .wxSearch-pancel{
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .wxSearch-input{
   flex: 8; 
-  background-color: #eee;
+  background-color: white;
   padding: 5px 10px;
 }
 .wxSearch-button{
   flex: 1;
   border: none !important;
-  color: cornflowerblue !important;
+  color: #78D1E9 !important;
 }
 .wxSearchTitle{
   display: block;
-  padding: 10px 5px 5px 10px;
+  padding: 10px 5px 10px 5px;
   font-size: 12px;
   text-align: center;
 }
 .wxSearchMindKeyItem{
-  padding: 10px 5px;
-  border-bottom: 1px solid #eee;
   display: flex;
-  font-size: 14px;
-  color: cornflowerblue;
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
 }
 .wxSearchKeyList{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 0 15px 0 15px;
 }
 .wxSearchKeyItem{
-  flex: 0 0 20%;
-  font-size: 14px;
+  font-size: 28rpx; 
+  color: #78D1E9; 
+  font-family: "微软雅黑";
   text-align: center;
-  border: 1px solid #eee;
   margin: 5px;
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 10px 20px;
+  border: 1px solid #eee;
+  border-radius: 23px;
+  border-color: #78D1E9;
+}
+.wxSearchKeyItem-clicked{
+  font-size: 28rpx; 
+  color: white; 
+  font-family: "微软雅黑";
+  background: #78D1E9;
+  text-align: center;
+  margin: 5px;
+  padding: 10px 20px;
+  border: 1px solid #eee;
+  border-radius: 23px;
+  border-color: #78D1E9;
 }
 .wxSearchHistoryItem{
-  padding: 10px 5px;
-  border-bottom: 1px solid #eee;
   display: flex;
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
 }
 .wxSearchHistoryItemText{
   flex: 8;
