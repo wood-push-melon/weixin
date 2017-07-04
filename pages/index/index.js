@@ -2,10 +2,6 @@
 var app = getApp()
 Page({
   data: {
-    indicatorDots: false,
-    feeds: ["特朗普今日会见奥巴马", "习近平主席到访北京石景山区"],
-    feed_idx: 1,
-    first_visit: true,
     feed_idx: 1,
 
     outlineButtons: [
