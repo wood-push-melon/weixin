@@ -22,5 +22,5 @@
     <image mode="aspectFit" style="width:17rpx" src="/images/icon_right.png"></image>
   </view>
 
-  <image style="width:150rpx; height:150rpx; margin-top:150rpx; margin-left:40%" src="/images/icon_logo_grey.png"></image>
+  <image mode="aspectFit" style="height:200rpx; margin-top:150rpx" src="/images/icon_logo.gif"></image>
 </view>

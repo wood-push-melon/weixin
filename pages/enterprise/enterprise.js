@@ -5,7 +5,94 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    enterpriseSet_01: [
+      {
+        "id": 0,
+        "isClicked": false,
+        "image": 'http://img04.tooopen.com/images/20130712/tooopen_17270713.jpg',
+        "url": '../enterprise/enterprise_01',
+        "width": 345
+      },
+      {
+        "id": 1,
+        "isClicked": false,
+        "image": 'http://img04.tooopen.com/images/20130617/tooopen_21241404.jpg',
+        "url": '../enterprise/enterprise_01',
+        "width": 345
+      },
+      {
+        "id": 2,
+        "isClicked": false,
+        "image": 'http://img04.tooopen.com/images/20130712/tooopen_17270713.jpg',
+        "url": '../enterprise/enterprise_01',
+        "width": 450
+      },
+      {
+        "id": 3,
+        "isClicked": false,
+        "image": 'http://img04.tooopen.com/images/20130617/tooopen_21241404.jpg',
+        "url": '../enterprise/enterprise_01',
+        "width": 240
+      },
+      {
+        "id": 4,
+        "isClicked": false,
+        "image": 'http://img04.tooopen.com/images/20130712/tooopen_17270713.jpg',
+        "url": '../enterprise/enterprise_01',
+        "width": 240
+      },
+      {
+        "id": 5,
+        "isClicked": false,
+        "image": 'http://img04.tooopen.com/images/20130617/tooopen_21241404.jpg',
+        "url": '../enterprise/enterprise_01',
+        "width": 450
+      },
+    ],
+    enterpriseSet_02: [
+      {
+        "id": 0,
+        "isClicked": false,
+        "image": 'http://img04.tooopen.com/images/20130712/tooopen_17270713.jpg',
+        "url": '../enterprise/enterprise_01',
+        "width": 345
+      },
+      {
+        "id": 1,
+        "isClicked": false,
+        "image": 'http://img04.tooopen.com/images/20130617/tooopen_21241404.jpg',
+        "url": '../enterprise/enterprise_01',
+        "width": 345
+      },
+      {
+        "id": 2,
+        "isClicked": false,
+        "image": 'http://img04.tooopen.com/images/20130712/tooopen_17270713.jpg',
+        "url": '../enterprise/enterprise_01',
+        "width": 450
+      },
+      {
+        "id": 3,
+        "isClicked": false,
+        "image": 'http://img04.tooopen.com/images/20130617/tooopen_21241404.jpg',
+        "url": '../enterprise/enterprise_01',
+        "width": 240
+      },
+      {
+        "id": 4,
+        "isClicked": false,
+        "image": 'http://img04.tooopen.com/images/20130712/tooopen_17270713.jpg',
+        "url": '../enterprise/enterprise_01',
+        "width": 240
+      },
+      {
+        "id": 5,
+        "isClicked": false,
+        "image": 'http://img04.tooopen.com/images/20130617/tooopen_21241404.jpg',
+        "url": '../enterprise/enterprise_01',
+        "width": 450
+      },
+    ]
   },
 
   /**

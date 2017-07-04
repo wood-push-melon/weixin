@@ -2,27 +2,18 @@
 var app = getApp()
 Page({
   data: {
-    // isLogin: app.globalData.isLogin,
     indicatorDots: false,
     feeds: ["特朗普今日会见奥巴马", "习近平主席到访北京石景山区"],
     feed_idx: 1,
     first_visit: true,
-    // marqueePace: 1,//滚动速度
-    // marqueeDistance: 0,
-    // size: 14,
-    // gap : 5 * 14, //每条新闻间隔5个字符
-    // orientation: 'left',//滚动方向
-    // interval: 20, // 时间间隔
-
-    // open: false, //控制侧边栏开闭
-    // windowWidth: wx.getSystemInfoSync().windowWidth,
+    feed_idx: 1,
 
     outlineButtons: [
       {
         "id": '0',
         "title": "区情概况",
         "image": '../../images/icon_overview.png',
-        "url": '../overview/overview'
+        "url": '../outline/overview'
       },
       {
         "id": '1',
@@ -34,115 +25,101 @@ Page({
         "id": '2',
         "title": "投资政策",
         "image": '../../images/icon_policy.png',
-        "url": '../policy/policy'
+        "url": '../outline/policy'
       }
     ],
     specialButtons: [
       {
         "id": '0',
-        "image": '../../images/logo.jpg',
+        "isClicked": false,
+        "title": "北京“侨梦苑”",
+        "image": 'http://img04.tooopen.com/images/20130712/tooopen_17270713.jpg',
         "url": '../special/special_01'
       },
       {
         "id": '1',
-        "image": '../../images/logo.jpg',
+        "isClicked": false,
+        "title": "冬奥产业",
+        "image": 'http://img04.tooopen.com/images/20130712/tooopen_17270713.jpg',
         "url": '../special/special_02'
       },
       {
         "id": '2',
-        "image": '../../images/banner_guide.png',
+        "isClicked": false,
+        "title": "保险产业园",
+        "image": 'http://img04.tooopen.com/images/20130712/tooopen_17270713.jpg',
         "url": '../special/special_03'
       },
       {
         "id": '3',
-        "image": '../../images/logo.jpg',
+        "isClicked": false,
+        "title": "新首钢",
+        "image": 'http://img04.tooopen.com/images/20130712/tooopen_17270713.jpg',
         "url": '../special/special_04'
       }
     ],
     keyButtons: [
       {
         "id": '0',
+        "isClicked": false,
         "title": '启迪香山',
-        "image": '../../images/logo.jpg',
+        "image": 'http://img04.tooopen.com/images/20130701/tooopen_20083555.jpg',
         "url": '../key/key_01'
       },
       {
         "id": '1',
+        "isClicked": false,
         "title": '中海大厦',
-        "image": '../../images/banner_guide.png',
+        "image": 'http://img04.tooopen.com/images/20130701/tooopen_20083555.jpg',
         "url": '../key/key_02'
       },
       {
         "id": '2',
+        "isClicked": false,
         "title": '石景山',
-        "image": '../../images/logo.jpg',
+        "image": 'http://img04.tooopen.com/images/20130701/tooopen_20083555.jpg',
         "url": '../key/key_01'
       }
     ],
     consultTitle: [
       {
         "id": '0',
-        "title": '内资公司如何在石景山注册'
+        "isClicked": false,
+        "title": '内资公司如何在石景山注册',
+        "url": '../consult/consult'
       },
       {
         "id": '1',
-        "title": '1213内资公司如何在石景山注册'
+        "isClicked": false,
+        "title": '1213内资公司如何在石景山注册',
+        "url": '../consult/consult'
       },
       {
         "id": '2',
-        "title": '343内资公司如何在石景山注册'
+        "isClicked": false,
+        "title": '343内资公司如何在石景山注册',
+        "url": '../consult/consult'
       }
-    ]
+    ],
+    feedsData: [
+      {
+        "id": '0',
+        "title": '特朗普今日会见奥巴马', 
+        "url": '../article/article_01'
+      },
+      {
+        "id": '1',
+        "title": '中关村VR产业园落户石景山',
+        "url": '../article/article_02'
+      }
+    ],
   },
-  swiperChange: function(e) {
+  
+  swiperChange: function (event) {
     this.setData({
-      feed_idx: e.detail.current + 1
+      feed_idx: event.detail.current + 1
     })
   },
-  // onShow: function () {
-  //   // 页面显示
-  //   var vm = this;
-  //   var windowWidth = wx.getSystemInfoSync().windowWidth;// 屏幕宽度
-  //   var len = '';
-  //   var length; // 新闻标题数组字符串拼接总长度
-  //   for (var i = 0; i < vm.data.text.length; i++) {
-  //     len = len.concat(vm.data.text[i]);
-  //   }
-  //   vm.setData({
-  //     isLogin: app.globalData.isLogin ? true : false,
-  //     length: len.length * vm.data.size + vm.data.text.length * vm.data.gap,
-  //     windowWidth: windowWidth
-  //   });
-  //   vm.run(); // 第一个字消失后立即从右边出现
-  // },
-  // run: function () {
-  //   var vm = this;
-  //   var interval = setInterval(function () {
-  //     var bound = vm.data.length < vm.data.windowWidth ? vm.data.windowWidth : vm.data.length;
-  //     if (-vm.data.marqueeDistance <= bound) {
-  //       vm.setData({
-  //         marqueeDistance: vm.data.marqueeDistance - vm.data.marqueePace,
-  //       });
-  //     } else {
-  //       clearInterval(interval);
-  //       vm.setData({
-  //         marqueeDistance: bound
-  //       });
-  //       vm.run();
-  //     }
-  //   }, vm.data.interval);
-  // },
-  // tapAvatar: function (e) {
-  //   if (this.data.open) {
-  //     this.setData({
-  //       open: false
-  //     });
-  //   } else {
-  //     this.setData({
-  //       open: true
-  //     });
-  //   }
-  // },
   
   // 跳转搜索页面
   toSearchPage: function () {
@@ -150,6 +127,13 @@ Page({
       url: '../search/search'
     })
   }, 
+  // 跳转滚动新闻文章页面
+  toFeedsPageDetail: function (event) {
+    var id = event.currentTarget.dataset.id;
+    wx.navigateTo({
+      url: this.data.feedsData[id].url
+    })
+  },
   // 跳转区情概况、重点企业、投资政策页面
   toOutlinePage: function (event) {
     var id = event.currentTarget.dataset.id;
@@ -166,9 +150,19 @@ Page({
   // 跳转投资专题文章页面
   toSpecialPageDetail: function (event) {
     var id = event.currentTarget.dataset.id;
-    wx.navigateTo({
-      url: this.data.specialButtons[id].url
-    })
+    var currentButton = this.data.specialButtons[id];
+    for (var i = 0; i < this.data.specialButtons.length; i++) { 
+      this.data.specialButtons[i].isClicked = false;
+    }
+    this.data.specialButtons[id].isClicked = true;
+    this.setData({
+      specialButtons: this.data.specialButtons
+    });
+    setTimeout(function () {
+      wx.navigateTo({
+        url: currentButton.url
+      })
+    },200)
   }, 
   // 跳转重点项目页面
   toKeyPage: function () {
@@ -179,15 +173,42 @@ Page({
   // 跳转重点项目文章页面
   toKeyPageDetail: function (event) {
     var id = event.currentTarget.dataset.id;
-    wx.navigateTo({
-      url: this.data.keyButtons[id].url
-    })
+    var currentButton = this.data.keyButtons[id];
+    for (var i = 0; i < this.data.keyButtons.length; i++) {
+      this.data.keyButtons[i].isClicked = false;
+    }
+    this.data.keyButtons[id].isClicked = true;
+    this.setData({
+      keyButtons: this.data.keyButtons
+    });
+    setTimeout(function () {
+      wx.navigateTo({
+        url: currentButton.url
+      })
+    }, 200)
   }, 
   // 跳转投资咨询页面
   toConsultPage: function () {
     wx.navigateTo({
       url: '../consult/consult'
     })
+  }, 
+  // 跳转投资咨询文章页面
+  toConsultPageDetail: function (event) {
+    var id = event.currentTarget.dataset.id;
+    var currentButton = this.data.consultTitle[id];
+    for (var i = 0; i < this.data.consultTitle.length; i++) {
+      this.data.consultTitle[i].isClicked = false;
+    }
+    this.data.consultTitle[id].isClicked = true;
+    this.setData({
+      consultTitle: this.data.consultTitle
+    });
+    setTimeout(function () {
+      wx.navigateTo({
+        url: currentButton.url
+      })
+    }, 200)
   }, 
 
   onShow: function () {
@@ -209,7 +230,7 @@ Page({
     var that = this
     //获取滚动新闻条目数量
     this.setData({
-      feeds_len: this.data.feeds.length
+      feed_len: this.data.feedsData.length
     })
     //调用应用实例的方法获取全局数据
     app.getUserInfo(function(userInfo){

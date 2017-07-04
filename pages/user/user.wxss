@@ -19,7 +19,7 @@
 .banner-area{
   width: 100%;
   height: 520rpx;
-  background-image: url("https://image.ibb.co/mZaQ05/banner_mine.png");
+  background-image: url("https://preview.ibb.co/jEkQQF/banner_me.png");
   background-size: 100%;
 }
 .bottom-area{
