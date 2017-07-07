@@ -1,2 +1,10 @@
 <!--pages/key/key_02.wxml-->
-<text>pages/key/key_02.wxml</text>
+<view class="article-fulltext-page">
+
+  <text class="article-fulltext-title">世界侨商创新中心</text>
+
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">项目位置：</text>位于新首钢高端产业综合服务区，是北京“侨梦苑”的核心区域。</text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">建设指标：</text>用地面积4.36公顷，建筑面积22万平方米。内部打造“庭”、“院”、“街”、“弄”等六种不同性质的古典空间类型，且根据建筑类型及功能的不同，形成多样的空间形式。</text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">发展定位：</text>侨商总部、国际组织和研发机构。</text>
+
+</view>

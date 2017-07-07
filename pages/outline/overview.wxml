@@ -1,2 +1,41 @@
 <!--pages/outline/overview.wxml-->
-<text>pages/outline/overview.wxml</text>
+<view class="article-fulltext-page">
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/overview/区情概况.jpg"></image>
+
+  <text class="article-fulltext-text">石景山区，因“燕都第一仙山”—“石经山”而得名，位于北京市西部，地处长安街沿线，距离天安门仅14公里。区域总面积84.38平方公里，常住人口65.3万。</text>
+  <text class="article-fulltext-text">近几年，石景山区坚持“全面深度转型、高端绿色发展”战略，积极构建以现代金融为核心，高新技术、文化创意、商务服务、旅游休闲为支撑的“高精尖”经济结构，重点打造“一轴、三园、多支点”产业发展格局，全力推进高端绿色发展生态建设。</text>
+  <text class="article-fulltext-text">搏浪扬帆、高端领航，一座集经济高端集约、生态环境优美、文化特色彰显、城市宜居和谐、人民幸福安康的国家级绿色转型发展示范区正在首都西部加快崛起。</text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/overview/生态环境优美.jpg"></image>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">生态环境优美。</text>石景山区山地面积占23%，绿化覆盖率达到51.3%，人均公共绿地面积18.4平方米，永定河流经辖区13.8公里，是北京市城区中山林资源最丰富、绿化覆盖率最高、人均拥有公共绿地最多的新城区，成功创建“全国绿化模范城市”。</text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/overview/文化底蕴深厚.jpg"></image>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">文化底蕴深厚。</text>石景山区拥有八大处、法海寺、天泰山、田义墓、模式口驼铃古道等72处历史文化资源。其中，八大处灵光寺珍藏的佛牙舍利，是世界上仅有的两枚释迦牟尼佛牙舍利之一；法海寺藏有明代宫廷壁画，精美绝伦。</text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/overview/基础设施完善.jpg"></image>
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/overview/基础设施完善2.jpg"></image>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">基础设施完善。</text>水电气热等市政基础设施愈加完善，北京市最大的热电中心—西北热电中心投入使用。长安街西延线、苹果园交通枢纽开工建设。石景山路、五环路等城市快速路，与贯穿全区的轨道交通1号线，和正在建设的S1、M6，构成了完善的路网格局。</text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/overview/产业结构优化.jpg"></image>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">产业结构优化。</text>石景山区着力发展“高精尖”产业，以现代金融等五大产业为主体的现代服务业迅速发展。2016年地区生产总值460 亿元，其中，第三产业比重达到68%，成为我区转型发展最首要的突破口。</text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">——现代金融产业：</text>建设以现代保险服务业为核心主导，以互联网金融、消费金融和产业金融为区域特色，以传统金融和类金融机构为重要支撑的现代金融产业体系。现代保险领域鼓励创新型保险业态发展，吸引专业性保险公司、信用保险公司等保险机构。互联网金融领域支持第三方支付、网络征信等新型业态。传统金融领域发展股份制银行、信贷资产证券化等新兴银行，以及股票、债券等证券业。</text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">——高新技术产业：</text>打造以新一代信息技术为品牌，以科技服务为区域特色，以人工智能新兴产业为战略培育的产业体系架构。新一代信息技术领域大力发展大数据、物联网、移动互联网等细分领域；科技服务领域重点发展创业孵化、检验检测认证、科技成果转化等新兴业态；人工智能新兴产业领域重点培育可穿戴设备、智能家居、车联网等智能硬件设备和系统集成服务。</text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">——文化创意产业：</text>巩固发展动漫游戏、影视制作、设计服务等优势产业，实现“文化+”业态融合发展。动漫游戏业重点发展新媒体动漫、动漫IP业、移动端游戏、网页游戏等；影视制作重点发展广播、演艺演出、艺人经纪、音乐发行等产业；设计服务以动漫游戏设计、工业工程设计、建筑规划设计、时尚设计等为主要发展方向。</text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/overview/商务服务产业.jpg"></image>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">——商务服务产业：</text>重点发展电子商务、商业保理、咨询服务等领域的前沿热点。电子商务领域重点发展移动电子商务、跨境电子商务等细分领域；商业保理业吸引外资、央国企、民间资本来区内注册商业保理公司；咨询服务领域重点发展会计、审计、法律等咨询服务，科技中介、资产评估等中介服务，支持专业服务机构拓展国际市场，推动专业服务业向品牌化、规模化、国际化发展。</text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/overview/旅游休闲产业.jpg"></image>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">——旅游休闲产业：</text>整合区域旅游资源，将石景山区打造成为集工业旅游、历史文化游、都市休闲游、体育赛事旅游和虚拟旅游为一体的旅游休闲中心。</text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/overview/产业载体高端.jpg"></image>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">产业载体高端。</text>石景山区坚持绿色发展理念，要求建筑面积超过5000平方米公共建筑必须达到绿色建筑三星标准。随着北京保险产业园、金融街长安中心等项目的建设，石景山区将释放出近千万平米的高端载体，为产业落地、企业入驻提供发展空间。 </text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/overview/发展潜力巨大.jpg"></image>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">发展潜力巨大。</text>首钢涉钢产业的搬迁调整,为石景山区提供了8.63平方公里的发展空间。冬奥组委入驻首钢，国家体育产业示范区和北京“侨梦苑”的落户，为石景山区带来了难得的发展机遇，国际化水平也得到了进一步的提升。</text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/overview/营商环境优良.png"></image>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">营商环境优良。</text>石景山区整合政府服务资源，建立绿色通道，打造一站式行政服务办公区。完善区领导联系企业机制、出台支持企业发展办法，提供注册代办、政策咨询、人才引进、子女入学等服务，打造高效服务型政府。</text>
+  
+</view>

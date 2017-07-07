@@ -1,2 +1,77 @@
 <!--pages/special/special_01.wxml-->
-<text>pages/special/special_01.wxml</text>
+<view class="article-fulltext-page">
+
+  <text class="article-fulltext-title">北京“侨梦苑” \n 华侨华人创新创业聚集区</text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/special/qiaomengyuan/北京侨梦苑规划图.jpg"></image>
+
+  <text class="article-fulltext-text">“侨梦苑”是国侨办与地方政府联手打造的华侨华人创新创业聚集区，是发挥侨务优势服务国家创新发展战略的重大举措，是实施“万侨创新”的核心载体。北京“侨梦苑”系全国挂牌成立的第十家“侨梦苑”。</text>
+
+  <text class="article-fulltext-subtitle">北京“侨梦苑”发展轴</text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/special/qiaomengyuan/发展轴_2014.11.jpg"></image>
+  <text class="article-fulltext-text">2014年11月，北京市政府侨办与北京市石景山区政府、首钢总公司共同签署《加快西部地区转型发展，推进“世界侨商创新中心”建设战略合作协议》，确定世界侨商创新中心项目落户新首钢高端产业综合服务区。</text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/special/qiaomengyuan/发展轴_2015.7.jpg"></image>
+  <text class="article-fulltext-text">2015年7月，首钢总公司携手7家侨商，共同签署《关于推进“世界侨商创新中心”建设的合作框架协议》。</text>
+
+  <text class="article-fulltext-text">2016年5月，北京市政府侨办、北京市石景山区政府和首钢总公司共同申请，经北京市政府同意，国务院侨办批复在石景山区设立北京“侨梦苑”。</text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/special/qiaomengyuan/发展轴_2016.6.jpg"></image>
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/special/qiaomengyuan/侨梦苑牌子.png"></image>
+  <text class="article-fulltext-text">2016年6月，在136个国家和地区的700余名重要侨领共同见证下，国务院侨办主任裘援平，北京市副市长程红共同为北京“侨梦苑”侨商产业聚集区正式揭牌。</text>
+
+  <text class="article-fulltext-subtitle">建设目标</text>
+  <text class="article-fulltext-text">落实国务院侨办启动的“万侨创新行动”计划，围绕首都功能定位，发挥侨务资源优势，将北京“侨梦苑”建设成为立足首都、服务全国、面向世界的侨商产业集聚中心和侨商创新资源配置中心，成为支撑与带动全区“八个高端体系”建设重要引擎，巩固与强化首都国际交往中心功能的关键支点，服务和引领全国“侨梦苑”的发展示范。</text>
+  
+  <text class="article-fulltext-subtitle">发展定位</text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">侨商产业集聚中心：</text>打造“资本、人才、技术、信息、文化、空间”六位一体的创新创业生态圈，形成集投资融资、研发创意、产业孵化、技术转移、知识产权运营、产品推介等服务体系。</text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">侨商创新技术中心：</text>推进建立北京“侨梦苑”海外院士专家工作站，加强与国际华侨创新创业中心合作，引导华侨科技人才与侨商企业的工程实验室、研发中心等创新平台落地，强化创新技术的支撑服务体系。 </text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">侨商资本要素中心：</text>搭建北京“侨梦苑”投融资平台，设立“侨商科技创新基金”，鼓励保险企业发行侨资企业海外投资保险，吸引侨资注册商业保理公司，多层面为侨商企业在国内落户和项目建设提供资本支撑。</text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">侨商资源进出通道：</text>利用首都国际交往中心优势，搭建与在京使领馆、国际组织的服务渠道，在北京“侨梦苑”建立侨商企业投资、项目推介和产品展示交易的综合服务平台。探索建设国际合作产业园区，通过建设海外孵化器、利用国际创新资源优势，创造更多与国际资本合作的机会，推动侨商企业的国际化。</text>
+  
+  <text class="article-fulltext-subtitle">功能布局</text>
+  <text class="article-fulltext-text">依托紧邻长安街的区位条件，以“世界侨商创新中心”为核心，辐射中关村科技园石景山园，并选择一批条件成熟的商务楼宇作为先行启动区，形成“一核一园多点”的产业功能布局，承接不同发展阶段的侨商企业，有序推进“侨梦苑”建设与发展。</text>
+
+  <text class="article-fulltext-subtitle" style="margin:0 0 10rpx 0">一核：世界侨商创新中心</text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/special/qiaomengyuan/世界侨商创新中心.jpg"></image>
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/special/qiaomengyuan/世界侨商创新中心2.jpg"></image>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">世界侨商创新中心，</text>位于新首钢高端产业综合服务区，紧邻长安街，一期项目21.8万平方米，是北京“侨梦苑”发展的核心空间载体，将打造成为集侨商总部、国际组织、研发机构等为一体的高端产业载体。</text>
+
+  <text class="article-fulltext-subtitle" style="margin:0 0 10rpx 0">一园：中关村科技园石景山园</text>
+  
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/special/qiaomengyuan/中关村石景山园.jpg"></image>
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/special/qiaomengyuan/中关村智能制造产业园.png"></image>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">中关村科技园石景山园，</text>将与“世界侨商创新中心”项目错位布局，联动发展，建设成为北京“侨梦苑”的科技新高地和文化前沿区。</text>
+  <text class="article-fulltext-subtitle" style="margin:0 0 10rpx 0">多点：产业先行启动区</text>
+  <text class="article-fulltext-text">为进一步满足不同行业、不同时期的企业需求，选定多处园区和载体着力打造“侨梦苑”产业集聚区，作为北京“侨梦苑”政策和机制的先行启动区。</text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/special/qiaomengyuan/北京侨创空间.jpg"></image>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">华侨华人科技金融集聚区，</text>紧邻西长安街沿线，作为绿建三星级及美国Leed金级双认证的大型商务综合体，具备国际化办公环境，建筑面积2万平方米，集中打造北京中美创新中心、侨创学院、侨梦苑咖啡、侨创空间等重点项目，建设“华侨华人科技金融集聚区”。</text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/special/qiaomengyuan/VR产业园.jpg"></image>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">北京“侨梦苑”科技创新园，</text>毗邻西长安街沿线，建筑面积7万平方米，围绕互联网+、虚拟现实、人工智能、软件开发、高端制造等业态，形成海外高端人才和高精尖产业落户的集聚区，并作为海外华侨华人院士专家国内创新创业工作站的承载区。</text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/special/qiaomengyuan/华侨华人创业人才社区.jpg"></image>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">华侨华人创业人才社区，</text>位于中关村石景山园西山汇10号楼，建筑面积约1.4万平方米，作为海外华侨华人配套的高端人才公寓，制定人才社区服务标准，实行市场化管理。</text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/special/qiaomengyuan/海特青橄榄创业园.jpg"></image>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">海特青橄榄创业基地，</text>位于北京海特饭店，面积1.8万平方米，升级建设成为青橄榄创业园，为华侨华人提供新三板上市挂牌的创业平台，作为华侨华人科技成果转化的加速示范窗口。</text>
+  
+  <text class="article-fulltext-subtitle">政策支持</text>
+  <text class="article-fulltext-text">落户北京“侨梦苑”的企业将享受中关村国家自主创新示范区、国家服务业综合改革试点区、国家城区老工业区搬迁改造试点等国家、市级和区级三重叠加优惠政策。</text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">中关村国家自主创新示范区：</text>涵盖了科技成果转化、税收支持、股权和分红激励等政策。</text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">国家服务业综合改革试点区：</text>石景山区成为北京市首个获批区域，每年安排 3亿元支持投融资平台建设。加大科技、文化、金融等市级资金对试点区的支持力度。针对文化创意产业，市政府给予20%至30%的资金补助。</text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">国家城区老工业区搬迁改造试点：</text>首钢老工业区被国家确定为首批城区老工业区搬迁改造试点，享受国家城区老工业区搬迁改造试点政策，在土地供应、土地收益和创新政府投资等方面都明确了具体支持方式。</text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">促进文化创意产业发展支持政策：</text>北京市每年安排5亿元文化创意产业发展专项资金，采取贷款贴息、项目补贴、政府重点采购、后期赎买和后期奖励等方式，对符合政府重点支持方向的文化创意产品、服务和项目予以扶持。</text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">区域产业支持政策：</text>石景山区出台“1+N”政策和支持企业发展的办法，涉及现代金融、虚拟现实、电子商务、文化创意等重点产业领域，提供技术改造和技术创新资金支持、房租补贴、上市企业补贴、人才奖励等各种支持政策。</text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">“侨梦苑”专项政策。</text>在集成国家、市、区优惠政策的基础上，针对侨资企业需求和实际问题，拟制定出台促进“侨梦苑”发展的专项政策。同时，深化体制机制改革，形成有利于侨商落地注册、项目投资、跨境贸易、通关的政策措施。</text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">设立产业基金：</text>由石景山区政府发起设立侨商科技创新基金，以金融平台助力侨商创业企业发展壮大。积极争取国家、北京市层面支持侨商发展、创新创业的各类政策引导资金，为侨商企业提供更加完备的政策资金支持。</text>
+  
+  <text class="article-fulltext-subtitle">服务保障</text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">完善服务机制。</text>在国侨办的领导下，市侨办、石景山区政府和首钢总公司共同建立北京“侨梦苑”协调工作机制，协调解决北京“侨梦苑”规划建设、项目落地、招商引资中的重大问题，推进北京“侨梦苑”建设的快速发展。</text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">强化人才服务。</text>用足中关村先行先试政策，协助申报“千人计划”、“海聚工程”、“回国（来华）定居工作专家项目”等海外高层次人才引进计划，推动解决外籍华人长期居留和永久居留问题。</text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">提升公共服务。</text>搭建“侨商政务服务”绿色通道，实行“一站式办公、一条龙服务”。建设国际化品质的人才公寓，解决侨商企业高管及领军人才的住房问题。完善人才子女教育保障、高端人才引进协调、企业劳动和社会保障、卫生和医疗保障等服务，提升“侨梦苑”公共服务配套品质，优化企业发展环境。</text>
+  
+</view>

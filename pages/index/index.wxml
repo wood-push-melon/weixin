@@ -39,10 +39,11 @@
     <view class="plan-title"><text>发展规划</text></view>
     <view class="plan-item">
       <text>"一轴、两带、三园、多支点"空间布局</text>
-      <text bindtap="toPlanPage" class="detail-text">查看详情 >></text>
+      <text bindtap="toPlanPage" class="detail-navigator">查看详情 >></text>
     </view>
-    <view class="map-section">
-      <image mode="aspectFit" style="width:100%" src="/images/map_small.gif"></image>
+    <view bindtap="toMapPage" class="map-section">
+      <image mode="aspectFit" style="width:100%; position:absolute; z-index:1" src="/images/map_small.gif"></image>
+      <image mode="aspectFit" style="{{isMapClicked? 'display: none' : ''}}; height:60rpx; position:absolute; z-index:2; margin-top:46rpx; margin-left:145rpx" src="/images/icon_click.png"></image>
     </view>
   </view>
 
@@ -52,7 +53,7 @@
     <view class="special-project-section">
       <view wx:for="{{specialButtons}}" bindtap="toSpecialPageDetail" data-id="{{item.id}}" class="special-project-block" style="background-image:url({{item.image}}); background-size:100%">
         <view class="special-project-block" style="{{item.isClicked? '' : 'display: none'}}; background:#78D1E9; position:absolute; z-index:1"></view>
-        <view class="special-project-icon" style="position:absolute; z-index:2"><text style="color:white">{{item.title}}</text></view>
+        <view class="special-project-icon" style="position:absolute; z-index:2"><text style="color:white; text-align:center">{{item.title}}</text></view>
       </view>
     </view>
   </view>
@@ -61,14 +62,14 @@
   <view class="key-area">
     <view class="key-title">
       <text>重点项目</text> 
-      <text bindtap="toKeyPage" class="detail-text">查看详情 >></text>
+      <text bindtap="toKeyPage" class="detail-navigator">查看详情 >></text>
     </view>
     <scroll-view scroll-x="true" style="white-space:nowrap"> 
       <view class="key-project-section" >
         <view wx:for="{{keyButtons}}" bindtap="toKeyPageDetail" data-id="{{item.id}}" class="key-project-block">
           <view class="key-project-image" style="background-image:url({{item.image}}); background-size:100%">
             <view class="key-project-image" style="{{item.isClicked? '' : 'display: none'}}; background:#78D1E9; position:absolute; z-index:1"></view>
-            <view class="key-project-icon" style="position:absolute; z-index:2"><text style="color:white">{{item.title}}</text></view>
+            <view class="key-project-icon" style="position:absolute; z-index:2"><text style="color:white; text-align:center">{{item.title}}</text></view>
           </view>
         </view>
       </view>
@@ -79,7 +80,7 @@
   <view class="consult-area">
     <view class="consult-title">
       <text>投资咨询</text>
-      <text bindtap="toConsultPage" class="detail-text">查看详情 >></text>
+      <text bindtap="toConsultPage" class="detail-navigator">查看详情 >></text>
     </view>
     <view wx:for="{{consultTitle}}" bindtap="toConsultPageDetail" data-id="{{item.id}}" class="{{item.isClicked? 'consult-item-clicked' : 'consult-item'}}">
       <text class="consult-text">•</text><text class="consult-text">{{item.title}}</text>

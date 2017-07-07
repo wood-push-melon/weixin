@@ -1,2 +1,44 @@
 <!--pages/plan/plan.wxml-->
-<text>pages/plan/plan.wxml</text>
+<view class="article-fulltext-page">
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/plan/石景山规划图.png"></image>
+
+  <text class="article-fulltext-text">按照北京市城市总体规划要求，统筹空间、规模、产业三大结构，立足区域资源禀赋，以“功能互补、区域联动、轴线集聚、节点支撑”为原则，以“一轴、两带、三园、多支点”为骨架，构建以重点功能区为支点，以交通干线、生态发展带为纽带的精明增长型空间布局。 </text>
+
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">一轴：长安街西延线综合发展轴。</text>加快实施长安街西延工程，不断增强长安街西延线贯通东西的交通功能。重点打造以创新金融为核心，集现代金融、高端商务为一体的长安金轴。充分发挥长安街西延线的串联作用，联动沿线产业功能区的协同发展。高标准规划建设沿线建筑及景观，注重绿色生态元素特色打造，以更高标准推进具有历史意义的“长安绿轴”升级版落地。</text>
+
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">两带：</text>坚持融合山水谋发展，以天泰山、西山八大处、永定河为依托，构筑京西绿色生态屏障，传承弘扬京西文化精髓，促进生态、文化、旅游深度融合，打造永定河绿色生态发展带和西山八大处文化旅游发展带。 </text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/plan/永定河绿色生态发展带.jpg"></image>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">——永定河绿色生态发展带。</text>抓住京津冀协同发展的历史机遇，依托“长安西端、太行山下、永定河畔”的区位优势，深度修复永定河水域生态，形成以莲石湖、麻峪湿地、永定河休闲森林公园为一体的永定河滨水生态画廊。联动首钢地区，重点发展文化创意、商务金融、旅游休闲等产业，打造山水交融、绿色宜居的生态文化发展带。</text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/plan/西山八大处文化旅游发展带.jpg"></image>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">——西山八大处文化旅游发展带。</text>借助北京打造西部历史文化带机遇，规划建设以西部浅山区为核心的文化旅游休闲区，加快西山八大处文化景区建设，综合法海寺、天泰山、田义墓、模式口驼铃古道等历史文化资源，促进生态文化、禅林文化、民俗文化等多种文化融合发展，大力发展生态旅游、文化旅游，打造首都特色生态文化旅游发展带。</text>
+
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">三园：</text>按照“五个典范”建设要求，打造中关村科技园石景山园、新首钢高端产业综合服务区、北京保险产业园“三园”的高端产业集聚发展格局。</text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/plan/中关村石景山园.jpg"></image>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">——中关村石景山园。</text>强化科技成果转化应用引领，提升科技创新、文化创新、服务创新三大动力，加快构建高精尖产业体系，提升产业服务能力，打造产业高端、创新活跃、设施完善、服务一流、生态宜商的中关村特色园区。</text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/plan/新首钢高端产业综合服务区.jpg"></image>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">——新首钢高端产业综合服务区。</text>加快新首钢“一轴、两带、五区”开发和基础设施建设。推动“互联网+新首钢服务区”发展，培育现代金融、文化创意、商务服务等产业，努力将新首钢高端产业综合服务区建设成为带动京西地区转型发展的新引擎。</text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/plan/北京保险产业园.jpg"></image>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">——北京保险产业园。</text>聚焦保险业改革创新，加快保险机构聚集，积极发展符合首都功能定位的现代保险服务业，不断提升保险产业园影响力，将保险产业园建设成为全国保险创新试验区、保险产业聚集区和保险文化引领区。</text>
+
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">“多支点”：</text>坚持内涵式、集约式发展，高效开发增量和存量空间资源，建设一批具有特色的商业楼宇载体，拓展产业发展空间。</text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/plan/京西商务中心.jpg"></image>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">——京西商务中心。</text>依托新首钢高端产业综合服务区和中关村石景山园，按照绿色建筑三星级的标准，将京西商务中心打造成为我区高端绿色发展的典范力作，重点引进新兴金融业态，形成金融街（长安）新中心。</text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/plan/银河商务区.jpg"></image>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">——银河综合商务区。</text>依托中铁大厦和万达广场等重要载体，重点发展商贸总部、电子商务等产业，建设成为特色总部企业聚集区、综合性商务服务业聚集区。积极推进北京国际雕塑园地下文化娱乐中心建设，整合北京台湾街、世界旅游城市联合会总部基地等空间资源，重点发展商务服务、旅游休闲等产业。</text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/plan/苹果园交通枢纽.jpg"></image>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">——苹果园交通枢纽商务区。</text>围绕苹果园交通枢纽建设，加快苹果园交通枢纽商务区地块开发进度，吸引一批创业创新、高端高效的企业入驻，形成集商务办公、商业服务、交通枢纽等功能于一体的枢纽型商务区。</text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/plan/西五环休闲.jpg"></image>
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/plan/西五环休闲2.jpg"></image>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">——西五环现代娱乐休闲区。</text>依托融科创新中心、京燕饭店、融景时代广场等载体，大力发展互联网金融、文化创意、现代商贸等产业。利用老山自行车馆、首钢篮球馆、石景山游乐园、酒吧街等设施，形成娱乐、体育、休闲、餐饮、购物等产业联动发展格局。</text>
+  
+</view>
