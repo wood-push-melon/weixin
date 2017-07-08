@@ -4,7 +4,7 @@
       <view class="wxSearchMindKey">
         <view class="wxSearchMindKeyList">
           <block wx:for="{{wxSearchData.mindKeys}}">
-            <view class="wxSearchMindKeyItem" bindtap="wxSearchKeyTap" data-key="{{item}}"><text class="detail-text">{{item}}</text></view>
+            <view class="wxSearchMindKeyItem" bindtap="wxSearchKeyTap" data-key="{{item}}"><text class="detail-navigator">{{item}}</text></view>
           </block>
         </view>
       </view>
@@ -39,7 +39,7 @@
   <view class="wxSearch-pancel">
     <icon type="search" size="14" style="margin-left:10rpx; margin-right:10rpx"></icon>
     <input bindinput="wxSearchInput" bindfocus="wxSerchFocus" value="{{wxSearchData.value}}" bindblur="wxSearchBlur" class="wxSearch-input" placeholder-style="font-size:28rpx; font-family:微软雅黑" placeholder="请输入搜索关键词" />
-    <button class="wxSearch-button" bindtap="wxSearchFn" plain="true"><text class="detail-text">搜索</text></button>
+    <button class="wxSearch-button" bindtap="wxSearchFn" plain="true"><text class="detail-navigator">搜索</text></button>
   </view>
 </view>
 <template is="wxSearch" data="{{wxSearchData}}"/>

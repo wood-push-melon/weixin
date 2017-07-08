@@ -86,15 +86,15 @@
   justify-content: space-between;
   align-items: flex-start;
 }
-.article-image-1{
+.article-image-one{
   width: 690rpx;
   height: 390rpx;
 }
-.article-image-2{
+.article-image-two{
   width: 335rpx;
   height: 190rpx;
 }
-.article-image-3{
+.article-image-three{
   width: 220rpx;
   height: 165rpx;
 }

@@ -16,7 +16,7 @@
 
   <!--频道菜单区域-->
   <view class="channel-area">
-    <view wx:for="{{channelButtons}}" bindtap="foldButtons" data-id="{{item.id}}" class="channel-block">
+    <view wx:for="{{channelButtons}}" class="channel-block">
         <image class="channel-image" src="{{item.image}}"/> 
         <text>{{item.title}}</text>
     </view>
@@ -27,17 +27,17 @@
     <text class="article-title">{{item.title}}</text>
     <view wx:if="{{item.numImage == 1}}" class="article-image-section">
       <view wx:for="{{item.image}}" wx:for-item="items">
-        <image mode="scaleToFill" class="article-image-1" src="{{items}}"/>
+        <image mode="scaleToFill" class="article-image-one" src="{{items}}"/>
       </view>
     </view>
     <view wx:elif="{{item.numImage == 2}}" class="article-image-section"> 
       <view wx:for="{{item.image}}" wx:for-item="items">
-        <image mode="scaleToFill" class="article-image-2" src="{{items}}"/>
+        <image mode="scaleToFill" class="article-image-two" src="{{items}}"/>
       </view>
     </view>
     <view wx:elif="{{item.numImage == 3}}" class="article-image-section"> 
       <view wx:for="{{item.image}}" wx:for-item="items">
-        <image mode="scaleToFill" class="article-image-3" src="{{items}}"/>
+        <image mode="scaleToFill" class="article-image-three" src="{{items}}"/>
       </view>
     </view>    
   </view>

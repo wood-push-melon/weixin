@@ -1,2 +1,36 @@
 <!--pages/special/special_02.wxml-->
-<text>pages/special/special_02.wxml</text>
+<view class="article-fulltext-page">
+
+  <text class="article-fulltext-title">冬奥让城市更美好</text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/special/winterOlympics/冬奥组委.jpg"></image>
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/special/winterOlympics/冬奥组委2.jpg"></image>
+  <text class="article-fulltext-text">随着冬奥组委入驻首钢西十筒仓和国家体育产业示范区落户，石景山也走向了世界舞台。按照规划，首钢园区将建成速滑、花滑、冰球及冰壶4座冬奥训练场馆，自由式滑雪空中技巧及单板滑雪大跳台，雪橇雪车等冰雪运动设施，并配套运动员公寓和商业设施。北京最大的市民冰雪运动中心也于今年落户石景山。</text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/special/winterOlympics/石景山形象.jpg"></image>
+  <text class="article-fulltext-text">对于这座曾经的“钢铁巨人”而言，不仅要拥有现代化的办奥设施，还必须具有与“奥运城市”身份匹配的公共服务能力和国际化水平。为此，石景山区出台了《石景山区服务保障冬奥会加快冰雪体育发展行动计划》，明确提出把冬奥机遇转化为带动区域经济社会发展的动力，将“奥运元素”融入到基础设施、环境改善、产业发展、休闲娱乐多方面，着力将石景山打造成为弘扬冬奥冰雪文化的高端绿色之城，让石景山这座城市更美好。</text>
+
+  <text class="article-fulltext-subtitle">基础设施更完善</text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/special/winterOlympics/苹果园交通枢纽.jpg"></image>
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/special/winterOlympics/永长安街西延跨河大桥.jpg"></image>
+  <text class="article-fulltext-text">启动冬奥组委驻地及周边配套保障工程，加快建设苹果园交通枢纽，轨道交通S1线、M6线，打造京西轨道交通中枢。重点推动长安街西延、北辛安路等主干道路建设，提升道路通达能力。</text>
+  <text class="article-fulltext-text">全面提升电力保障和供水网络水平，推动苹果园220KV变电站、石景山水厂等重点基础设施建设。</text>
+  
+  <text class="article-fulltext-subtitle">生活环境更舒适</text>
+  <text class="article-fulltext-text">重点加大冬奥组委驻地周边棚改力度，推动北辛安、衙门口棚户区改造。结合“疏解整治促提升”专项行动，加大对大杂院、低端落后市场的疏解力度，2017年底除待拆迁平房区外，全部社区实现“基本无违建”。</text>
+  <text class="article-fulltext-text">在城市景观设计中融入更多冬奥元素，在长安街、五环路、阜石路沿线等门户位置打造一批冬奥特色景观。</text>
+  
+  <text class="article-fulltext-subtitle">经济发展更高端</text>
+  <text class="article-fulltext-text">充分利用好国家服务业综合改革试点区政策，推动冰雪产业与五大主导产业深度融合，大力发展冰雪健身休闲业、冰雪竞技表演业、冰雪中介服务业，并建设冰雪装备交易展示中心，形成冰雪产业链条，培育新的经济增长点。</text>
+  <text class="article-fulltext-text">结合五大主导产业，石景山将重点培育与冬奥赛事相关的人身保险、财产保险等现代金融行业，以及冰雪主题的工业品、动漫、游戏等文创产品。此外，石景山将积极筹办各类冰壶、冰球、花滑等冰雪赛事，推动冰雪竞技表演业发展。</text>
+
+  <text class="article-fulltext-subtitle">休闲娱乐更丰富</text>
+
+  <image mode="widthFix" class="article-fulltext-image" src="/article-images/special/winterOlympics/可拆卸20个冰场的分布图.jpg"></image>
+  <text class="article-fulltext-text">依托全区1个体育中心、8个教育集团、9个街道（社区）、3个公园，建设不少于20个可拆卸冰雪运动场地。在中小学校也将增设冬奥会、观赛礼仪和冰雪运动课程，组织冰雪运动知识竞赛和课外活动。</text>
+  <text class="article-fulltext-text">新首钢也将变身冰雪产业园，建设室内嬉雪乐园、冰上卡丁车馆、冰雕馆和冰场。同时，石景山市民冰雪运动中心也在加速建设，内置的三块奥运标准冰球场地将满足不同人群运动需求。</text>
+  <text class="article-fulltext-text">未来，石景山每年将举办冰雪嘉年华等各类主题活动不少于20项，全区参与冰雪运动及冰雪活动人口比例实现50%。</text>
+  <text class="article-fulltext-text">冬奥会不仅是一场赛事，更是石景山转型发展的重大机遇。未来五年，石景山将全力打造“新冬奥、新石景山”，到2022年冬奥会举办时，一座经济质量高效、服务品质一流、生态环境优越、冰雪特色彰显、人民健康幸福的国家级绿色转型发展示范区将在首都西部崛起。</text>
+
+</view>

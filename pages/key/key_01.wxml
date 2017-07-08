@@ -1,2 +1,10 @@
 <!--pages/key/key_01.wxml-->
-<text>pages/key/key_01.wxml</text>
+<view class="article-fulltext-page">
+
+  <text class="article-fulltext-title">北京保险产业园</text>
+
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">项目位置：</text>位于中关村石景山园。</text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">建设指标：</text>三大区域——产业核心区+产业辐射区+产业拓展区。产业核心区，位于西山八大处南侧，用地面积64.5公顷，建筑面积56.3万平方米。产业辐射区、产业拓展区，位于新首钢高端产业综合服务区内。</text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">发展定位：</text>以保险业为发展主题的国家级产业园。</text>
+
+</view>

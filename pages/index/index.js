@@ -3,6 +3,7 @@ var app = getApp()
 Page({
   data: {
     feed_idx: 1,
+    isMapClicked: false,
 
     outlineButtons: [
       {
@@ -29,28 +30,28 @@ Page({
         "id": '0',
         "isClicked": false,
         "title": "北京“侨梦苑”",
-        "image": 'http://img04.tooopen.com/images/20130712/tooopen_17270713.jpg',
+        "image": '../../images/bg.jpg',
         "url": '../special/special_01'
       },
       {
         "id": '1',
         "isClicked": false,
         "title": "冬奥产业",
-        "image": 'http://img04.tooopen.com/images/20130712/tooopen_17270713.jpg',
+        "image": '../../images/bg.jpg',
         "url": '../special/special_02'
       },
       {
         "id": '2',
         "isClicked": false,
         "title": "保险产业园",
-        "image": 'http://img04.tooopen.com/images/20130712/tooopen_17270713.jpg',
+        "image": '../../images/bg.jpg',
         "url": '../special/special_03'
       },
       {
         "id": '3',
         "isClicked": false,
         "title": "新首钢",
-        "image": 'http://img04.tooopen.com/images/20130712/tooopen_17270713.jpg',
+        "image": '../../images/bg.jpg',
         "url": '../special/special_04'
       }
     ],
@@ -58,23 +59,23 @@ Page({
       {
         "id": '0',
         "isClicked": false,
-        "title": '启迪香山',
-        "image": 'http://img04.tooopen.com/images/20130701/tooopen_20083555.jpg',
+        "title": '北京保险产业园',
+        "image": '../../images/key/北京保险产业园.jpg',
         "url": '../key/key_01'
       },
       {
         "id": '1',
         "isClicked": false,
-        "title": '中海大厦',
-        "image": 'http://img04.tooopen.com/images/20130701/tooopen_20083555.jpg',
+        "title": '世界侨商创新中心',
+        "image": '../../images/key/世界侨商创新中心.jpg',
         "url": '../key/key_02'
       },
       {
         "id": '2',
         "isClicked": false,
-        "title": '石景山',
-        "image": 'http://img04.tooopen.com/images/20130701/tooopen_20083555.jpg',
-        "url": '../key/key_01'
+        "title": '首钢•城市织补\n创新工场东区',
+        "image": '../../images/key/首钢城市织补创新工场东区.jpg',
+        "url": '../key/key_03'
       }
     ],
     consultTitle: [
@@ -82,19 +83,19 @@ Page({
         "id": '0',
         "isClicked": false,
         "title": '内资公司如何在石景山注册',
-        "url": '../consult/consult'
+        "url": '../consult/consult_01'
       },
       {
         "id": '1',
         "isClicked": false,
         "title": '1213内资公司如何在石景山注册',
-        "url": '../consult/consult'
+        "url": '../consult/consult_02'
       },
       {
         "id": '2',
         "isClicked": false,
         "title": '343内资公司如何在石景山注册',
-        "url": '../consult/consult'
+        "url": '../consult/consult_01'
       }
     ],
     feedsData: [
@@ -143,6 +144,15 @@ Page({
       url: '../plan/plan'
     })
   }, 
+  // 跳转规划地图页面
+  toMapPage: function () {
+    this.setData({
+      isMapClicked: true
+    })
+    wx.navigateTo({
+      url: '../plan/map'
+    })
+  },
   // 跳转投资专题文章页面
   toSpecialPageDetail: function (event) {
     var id = event.currentTarget.dataset.id;

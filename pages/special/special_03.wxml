@@ -1,2 +1,59 @@
 <!--pages/special/special_03.wxml-->
-<text>pages/special/special_03.wxml</text>
+<view class="article-fulltext-page">
+
+  <text class="article-fulltext-title">八大处•山水之间•保险产业园</text>
+
+  <text class="article-fulltext-subtitle" style="text-align:center; text-indent:0">西山•八大处</text>
+  <text class="article-fulltext-text">北京西山，太行山的余脉，山体雄厚、万木峥嵘，城市之肺。</text>
+  <text class="article-fulltext-text">八大处，半包围的山体让园区在旭日东升时接受第一缕晨曦，也为园区在日落西山时阻挡了西晒，却透出落日余晖。得天独厚的地理环境中灵光寺、法海寺等多座名寺守护其中，三山八刹十二景环绕山间，其中灵光、长安、大悲、香界、证果五寺均为皇帝敕建，八大处公园因二处灵光寺供奉世间罕存的释迦摩尼灵牙舍利而驰名海内外。</text>
+  <text class="article-fulltext-text">永定河，北京的母亲河，自北京西山蜿蜒流出，护卫京城，永引渠将母亲河的水带到八大处脚下。因山得水，雨水落入小西山滋润万物，也同样被万物净化，为石景山区带了丰沛、高质的地下水资源，八大处群山净化来的雨水流经园区东侧与永引渠汇合，为八大处区域带来了更高的空气湿度，削弱了城市的杂尘，触动着人本亲水的情怀。</text>
+  <text class="article-fulltext-text">保险产业园正是在这样的山水之间浸润禅林古韵，坐拥四季风景。是自然与现代完美结合体，是城市中无可复制的洁净土地，是石景山“有山、有水、有城、有业、宜居”最好的诠释。</text>
+
+  <text class="article-fulltext-subtitle" style="text-align:center; text-indent:0">“绿色石景山，新的增长点”</text>
+  <text class="article-fulltext-text">在保监会、北京市政府、石景山区政府的合力推动下，北京保险产业园应运而生。作为绿色石景山新的增长点，按“五个典范”要求，建设成为体现21世纪文明水平的精品力作。</text>
+  <text class="article-fulltext-subtitle" style="margin:0 0 10rpx 0">高端产业的典范：</text>
+  <text class="article-fulltext-subtitle" style="margin:0 0 10rpx 0">规划建设的典范：</text>
+  <text class="article-fulltext-subtitle" style="margin:0 0 10rpx 0">高端文化的典范：</text>
+  <text class="article-fulltext-subtitle" style="margin:0 0 10rpx 0">智能管理的典范：</text>
+  <text class="article-fulltext-subtitle" style="margin:0 0 10rpx 0">生态文明的典范：</text>
+  
+  <text class="article-fulltext-subtitle" style="text-align:center; text-indent:0">北京保险产业园 锁定高端 创新驱动</text>
+  <text class="article-fulltext-text">北京保险产业园是由中国保监会与北京市政府共同建设的国家级金融创新示范区，是推动京津冀协同发展、构建北京高精尖经济结构、培育高端产业发展新优势的重要内容，是石景山区转型发展的主战场。保险产业园将锁定高端，创新驱动，建设成为全国保险创新试验区、保险产业聚集区和保险文化引领区。</text>
+  <text class="article-fulltext-subtitle" style="margin:0 0 10rpx 0">1.保险创新实验区</text>
+  <text class="article-fulltext-text">自足首都城市战略定位和京津冀协同发展战略，按照“政府推动、市场运作”的原则，高起点、高标准、高水平推动开发建设，加强创新引领，打造以保险产业为主体的国家级金融创新示范区。通过加强组织创新，完善保险市场体系；开展产品创新，促进经济社会发展；加快服务创新，提升社会保障水平；探索资金运用创新，支持经济转型升级；推进监管创新，防范化解风险完成创新实验区作用。</text>
+  <text class="article-fulltext-subtitle" style="margin:0 0 10rpx 0">2.保险产业聚集区</text>
+  <text class="article-fulltext-text">未来，北京保险产业园将发展成为中国保险产业园的聚集区，吸引保险企业、保险金融类智库以及保险相关政府部门的入驻。各机构在北京保险产业园的大平台下互通有无，资源共享，竞相发展，和谐前行。</text>
+  <text class="article-fulltext-subtitle" style="margin:0 0 10rpx 0">3.保险文化引领区</text>
+  <text class="article-fulltext-text">北京保险产业园与各级政府、保险机构、专业协会等联合，定期举办各行业顶级峰会，并为结合行业顶级峰会建立相关信息共享平台，通过出版、网络等途径扩大影响力，并输出相关成果和最新的行业动态信息，积极推进保险产业发展。</text>
+  
+  <text class="article-fulltext-subtitle" style="text-align:center; text-indent:0">北京保险产业园择址八大处山麓 \n 除了葱翠的生态环境，还有哪些区域优势？</text>
+  <text class="article-fulltext-subtitle" style="margin:0 0 10rpx 0">1.多维交通，四通八达</text>
+  <text class="article-fulltext-text">保险产业园交通便捷。公路交通网发达，园区向东1.5km直达西五环，向南2.4km承接阜石路，整体区域通过五环、阜石路、石景山路、莲石路、四环路、六环路及其他市政路的互相连通，使园区融入四通八达的道路交通网。园区周边轨道交通系统完善，园区距地铁1号线苹果园站2.3km，距即将建成的地铁6号线苹果园南路站1.3km，两座地铁站均有园区专车实现最后路段接驳。此外，建设中S1号线和规划M11号线在金安桥站及苹果园站与地铁1号线、6号线实现换乘，未来规划L2线直抵园区南侧。</text>
+  <text class="article-fulltext-subtitle" style="margin:0 0 10rpx 0">2.新石景山，完善配套</text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">自然资源: </text>八大处森林公园、法海寺森林公园、香山公园、北京植物园、西山国家森林公园；</text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">高端商业服务区：</text>新首钢高端产业服务区、苹果园交通枢纽商务区；</text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">高端写字楼：</text>石景山万达写字楼、金融街•长安中心、绿地环球文化金融城、融科创意中心、中海大厦、点石商务公园、盛景国际、中铁•耀中心；</text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">大型购物中心：</text>石景山万达广场、当代商城、喜隆多新国际购物中心、沃尔玛山姆会员店；</text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">星级酒店：</text>万达嘉华酒店、万商花园酒店﹑合众假日酒店、京燕饭店、华北宾馆；</text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">高端住宅：</text>远洋天著春秋，茂华璟公馆、西山美庐、庐师山庄、燕西台；</text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle">文体休闲：</text>北京射击场、老山自行车馆、老山击剑俱乐部、石景山区文化中心。</text>
+  <text class="article-fulltext-subtitle" style="margin:0 0 10rpx 0">3.金融环境，日渐蓬勃</text>
+  <text class="article-fulltext-text">石景山区有着坚实的金融产业发展基础。2015，现代金融产业实现收入603亿元，同比增长16%；对区域财政贡献度达到19%以上，呈现出高速增长态势，居各行业之首。</text>
+  <text class="article-fulltext-text">凭借优越的自然环境、便利的交通、完善的城市配套及坚实的金融产业发展基础，北京保险产业园得以在石景山区八大处山麓落地生根，肩负着中国保险产业的未来希望，发展向前。</text>
+  
+
+
+  <text class="article-fulltext-subtitle"></text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle"></text></text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle"></text></text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle"></text></text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle"></text></text>
+  <text class="article-fulltext-text"><text class="article-fulltext-subtitle"></text></text>
+  
+  <text class="article-fulltext-subtitle"></text>
+  <text class="article-fulltext-text"></text>
+  <text class="article-fulltext-text"></text>
+  <text class="article-fulltext-text"></text>
+  <text class="article-fulltext-text"></text>
+
+</view>

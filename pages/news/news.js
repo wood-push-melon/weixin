@@ -28,33 +28,6 @@ Page({
       },
       {
         "id": '4',
-        "title": "更多",
-        "image": '../../images/icon_small_more.png'
-      }
-    ],
-    channelButtonsFulllist: [
-      {
-        "id": '0',
-        "title": "规划项目",
-        "image": '../../images/icon_small_project.png'
-      },
-      {
-        "id": '1',
-        "title": "政策申报",
-        "image": '../../images/icon_small_policy.png'
-      },
-      {
-        "id": '2',
-        "title": "新闻快讯",
-        "image": '../../images/icon_small_news.png'
-      },
-      {
-        "id": '3',
-        "title": "侨梦苑",
-        "image": '../../images/icon_small_qiaomengyuan.png'
-      },
-      {
-        "id": '4',
         "title": "收起",
         "image": '../../images/icon_small_hide.png'
       },
@@ -144,24 +117,6 @@ Page({
     ]
   },
 
-  foldButtons: function (event) {
-    if (event.currentTarget.dataset.id == '4') {
-      if (this.data.isChannelFolded) {
-        this.data.channelButtons = this.data.channelButtonsFulllist.slice(0,5),
-        this.data.channelButtons[4].title = '更多',
-        this.data.channelButtons[4].image = '../../images/icon_small_more.png'
-      } else {
-        this.data.channelButtons = this.data.channelButtonsFulllist,
-        this.data.channelButtons[4].title = '收起',
-        this.data.channelButtons[4].image = '../../images/icon_small_hide.png'
-      }
-      this.setData({
-        isChannelFolded: !this.data.isChannelFolded,
-        channelButtons: this.data.channelButtons
-      })
-    }
-  },
-
   adjustImage: function (e) {
     var id = e.currentTarget.dataset.id;
     var image_ = this.data.articleData;
@@ -187,7 +142,5 @@ Page({
   },
 
   onLoad: function () {
-    // var image_ = this.data.articleData[0].image;
-    // console.log(image_)
   }
 }) 
