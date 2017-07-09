@@ -1,11 +1,14 @@
 // pages/special/special_04.js
+var util = require('../../utils/util.js')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    id: 'special_04',
+    isCollect: false, //是否被收藏
+    news: { image: ['../../images/bg.jpg',], title: '新首钢', url: '../../pages/special/special_04' }
   },
 
   /**
@@ -62,5 +65,13 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+
+  /**
+  * 页面收藏功能
+  */
+  collectOrNot: function () {
+    var that = this;
+    util.collectOrNot(that);
   }
 })

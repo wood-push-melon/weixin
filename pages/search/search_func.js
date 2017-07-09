@@ -131,6 +131,19 @@ function wxSearchKeyTap(e, that, callBack) {
   that.setData({
     wxSearchData: temData
   });
+
+  var searchData = that.data.searchArray;
+  for (var i = 0; i < searchData.length; i++) {
+    if (e.target.dataset.key == searchData[i].key) {
+      temData.keys[i]['isClicked'] = true;
+    } else {
+      temData.keys[i]['isClicked'] = false;
+    }
+  }
+  that.setData({
+    wxSearchData: temData
+  });
+
   if (typeof (callBack) == "function") {
     callBack();
   }

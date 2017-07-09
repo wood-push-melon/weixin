@@ -1,4 +1,6 @@
 <!--pages/special/special_03.wxml-->
+<import src="../template/template.wxml"/>
+
 <view class="article-fulltext-page">
 
   <text class="article-fulltext-title">八大处•山水之间•保险产业园</text>
@@ -57,3 +59,5 @@
   <text class="article-fulltext-text"></text>
 
 </view>
+
+<template is="favorite" data="{{isCollect}}"/>

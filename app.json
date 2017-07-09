@@ -45,7 +45,8 @@
     "pages/article/article_02",
     "pages/user/user",
     "pages/favorite/favorite",
-    "pages/about/about"
+    "pages/about/about",
+    "pages/template/template"
   ],
   "window": {
     "backgroundTextStyle": "light",

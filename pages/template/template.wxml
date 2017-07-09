@@ -1,0 +1,13 @@
+<!--template.wxml-->
+<template name="favorite">
+  <view class="toolbar">
+    <view class="inner">
+      <view class="item" bindtap="collectOrNot" wx:if="{{isCollect}}">
+        <image src="../../images/star_active.png" />
+      </view>
+      <view class="item" bindtap="collectOrNot" wx:else>
+        <image src="../../images/star.png" />
+      </view>
+    </view>
+  </view>
+</template>

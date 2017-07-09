@@ -12,7 +12,12 @@
         <text class="wxSearchTitle">热门搜索</text>
         <view class="wxSearchKeyList">
           <block wx:for="{{wxSearchData.keys}}">
-            <view class="wxSearchKeyItem" bindtap="wxSearchKeyTap" data-key="{{item}}">{{item}}</view>
+            <block wx:if="{{item.isClicked}}">
+              <view class="wxSearchKeyItem-clicked" bindtap="wxSearchKeyTap" data-key="{{item.key}}">{{item.key}}</view>
+            </block>
+            <block wx:else>
+              <view class="wxSearchKeyItem" bindtap="wxSearchKeyTap" data-key="{{item.key}}">{{item.key}}</view>
+            </block>        
           </block>
         </view>
       </view>

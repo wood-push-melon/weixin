@@ -1,2 +1,7 @@
 <!--pages/special/special_04.wxml-->
+<import src="../template/template.wxml"/>
+
 <text>pages/special/special_04.wxml</text>
+
+
+<template is="favorite" data="{{isCollect}}"/>

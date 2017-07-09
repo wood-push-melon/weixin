@@ -1,14 +1,11 @@
-// pages/special/special_03.js
-var util = require('../../utils/util.js')
+// template.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    id: 'special_03',
-    isCollect: false, //是否被收藏
-    news: { image: ['../../images/bg.jpg',], title: '保险产业园', url: '../../pages/special/special_03' }
+  
   },
 
   /**
@@ -66,12 +63,4 @@ Page({
   onShareAppMessage: function () {
   
   },
-
-  /**
-   * 页面收藏功能
-   */
-  collectOrNot: function () {
-    var that = this;
-    util.collectOrNot(that);
-  }
 })

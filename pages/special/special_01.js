@@ -1,13 +1,14 @@
 // pages/special/special_01.js
+var util = require('../../utils/util.js')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    id: '1',
+    id: 'special_01',
     isCollect: false, //是否被收藏
-    news: {image: ['../../images/logo.jpg',], title: '投资专题第一篇文章', url: '../../pages/special/special_01'}
+    news: {image: ['../../images/bg.jpg',], title: '北京“侨梦苑”', url: '../../pages/special/special_01'}
   },
 
   /**
@@ -76,23 +77,8 @@ Page({
   /**
    * 页面收藏功能
    */
-  collectOrNot: function () {
-    var pageData = wx.getStorageSync('pageData') || []
-    if (this.data.isCollect) {
-      for (var i = 0; i < pageData.length; i++) {
-        if (pageData[i].id == this.data.id) {
-          pageData.splice(i, 1);
-          this.setData({ isCollect: false });
-          break;
-        }
-      }
-    } else {
-      var images = new Array(this.data.news.image);
-      var item = { id: this.data.id, title: this.data.news.title, images: images, url: this.data.news.url };
-      pageData.unshift(item);
-      this.setData({ isCollect: true });
-    }
-
-    wx.setStorageSync('pageData', pageData);
-  },
+  collectOrNot: function() {
+    var that = this;
+    util.collectOrNot(that);
+  }
 })

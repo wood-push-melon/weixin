@@ -218,18 +218,6 @@ Page({
   }, 
 
   onShow: function () {
-    // 判断是否第一次进入首页
-    var visited = wx.getStorageSync('fv')
-
-    console.log('cache: ' + visited)
-    if (visited.length == 0) {
-      wx.setStorageSync('fv', 'yes')
-    } else {
-      this.setData({
-        first_visit: false
-      })
-    }
-    console.log(this.data.first_visit)
   },
 
   onLoad: function () {

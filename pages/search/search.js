@@ -3,18 +3,20 @@ var WxSearch = require('/search_func.js')
 var app = getApp()
 Page({
   data: {
-    // wxSearchData:{
-    //   view:{
-    //     isShow: true
-    //   }
-    // }
+    searchArray: [
+      {'key': '石景山', 'isClicked': false},
+      {'key': '孵化器', 'isClicked': false},
+      {'key': '北京保险产业园', 'isClicked': false},
+      { 'key': '人工智能', 'isClicked': false },
+      { 'key': 'A轮', 'isClicked': false }
+      ],
+    searchMindArray: ['Ai石景山', '石景山投资', '创业孵化器', '人工智能创业', 'A轮融资']
   },
   onLoad: function () {
-    console.log('onLoad')
     var that = this
     //初始化的时候渲染wxSearchdata
-    WxSearch.init(that, 43, ['石景山', '孵化器', '北京保险产业园', '人工智能', 'A轮'], true);
-    WxSearch.initMindKeys(['Ai石景山', '石景山投资', '创业孵化器', '人工智能创业','A轮融资']);
+    WxSearch.init(that, 43, this.data.searchArray, true);
+    WxSearch.initMindKeys(this.data.searchMindArray);
   },
   wxSearchFn: function (e) {
     var that = this
@@ -47,6 +49,8 @@ Page({
   },
   wxSearchTap: function (e) {
     var that = this
-    WxSearch.wxSearchHiddenPancel(that);
+    setTimeout(function () {
+      WxSearch.wxSearchHiddenPancel(that);
+    }, 200)
   }
 })

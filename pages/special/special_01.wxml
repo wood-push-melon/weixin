@@ -1,4 +1,6 @@
 <!--pages/special/special_01.wxml-->
+<import src="../template/template.wxml"/>
+
 <view class="article-fulltext-page">
 
   <text class="article-fulltext-title">北京“侨梦苑” \n 华侨华人创新创业聚集区</text>
@@ -76,13 +78,5 @@
   
 </view>
 
-<view class="toolbar">
-  <view class="inner">
-    <view class="item" bindtap="collectOrNot" wx:if="{{isCollect}}">
-      <image src="../../images/star_active.png" />
-    </view>
-    <view class="item" bindtap="collectOrNot" wx:else>
-      <image src="../../images/star.png" />
-    </view>
-  </view>
-</view>
+
+<template is="favorite" data="{{isCollect}}"/>

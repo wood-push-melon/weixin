@@ -1,4 +1,6 @@
 <!--pages/special/special_02.wxml-->
+<import src="../template/template.wxml"/>
+
 <view class="article-fulltext-page">
 
   <text class="article-fulltext-title">冬奥让城市更美好</text>
@@ -34,3 +36,5 @@
   <text class="article-fulltext-text">冬奥会不仅是一场赛事，更是石景山转型发展的重大机遇。未来五年，石景山将全力打造“新冬奥、新石景山”，到2022年冬奥会举办时，一座经济质量高效、服务品质一流、生态环境优越、冰雪特色彰显、人民健康幸福的国家级绿色转型发展示范区将在首都西部崛起。</text>
 
 </view>
+
+<template is="favorite" data="{{isCollect}}"/>

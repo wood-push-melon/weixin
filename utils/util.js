@@ -24,7 +24,29 @@ function regexConfig(){
   return reg;
 }
 
+/**
+  * 页面收藏功能
+  */
+function collectOrNot(that) {
+  var pageData = wx.getStorageSync('pageData') || []
+  if (that.data.isCollect) {
+    for (var i = 0; i < pageData.length; i++) {
+      if (pageData[i].id == that.data.id) {
+        pageData.splice(i, 1);
+        that.setData({ isCollect: false });
+        break;
+      }
+    }
+  } else {
+    var item = { id: that.data.id, title: that.data.news.title, images: that.data.news.image, url: that.data.news.url };
+    pageData.unshift(item);
+    that.setData({ isCollect: true });
+  }
+  wx.setStorageSync('pageData', pageData);
+}
+
 module.exports = {
   formatTime: formatTime,
-  regexConfig:regexConfig
+  regexConfig:regexConfig,
+  collectOrNot: collectOrNot
 }
