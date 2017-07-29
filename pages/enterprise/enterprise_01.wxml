@@ -1,2 +1,17 @@
 <!--pages/enterprise/enterprise_01.wxml-->
-<text>pages/enterprise/enterprise_01.wxml</text>
+<view bindtouchstart="touchstart" bindtouchend="touchend">
+
+  <scroll-view scroll-y="true" scroll-into-view="{{toView}}" style="height: {{windowHeight}}px">
+    <view class="brand" wx:for="{{enterprise}}">
+      <view class="line"></view>
+      <view id="{{item.id}}" class="wordindex">{{item.id}}</view>
+      <view class="line"></view>
+      <view class="brand_block">
+        <view class="color_view" wx:for="{{item.brands}}" bindtap="click">
+          <image src="{{item.image}}" mode="scaleToFill" class="list-item" style="width:{{item.width}}rpx"></image>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+</view>
